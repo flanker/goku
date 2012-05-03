@@ -1,8 +1,13 @@
 source 'https://rubygems.org'
 
-gem 'rake'
 gem 'jekyll'
 gem 'rdiscount'
 gem 'json'
 gem 'instagram'
-gem 'heroku'
+gem 'rack-jekyll'
+gem 'faraday', '0.7.6'
+
+group :development do
+	gem 'rake'
+	gem 'heroku'
+end
