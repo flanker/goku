@@ -1,0 +1,13 @@
+---
+layout: page
+title: "Instagram"
+---
+{% include JB/setup %}
+
+<ul class="thumbnails">
+{% instagram accesstokenpath:instagram %}
+<li class="span2">
+<a href="{{ item.link }}" class="thumbnail"><img src="{{ item.images.thumbnail.url }}" /></a>
+</li>
+{% endinstagram %}
+</ul>
