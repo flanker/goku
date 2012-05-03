@@ -1,1 +1,1 @@
-web: bundle exec jekyll --server -p 80
+web: bundle exec jekyll --server 80
