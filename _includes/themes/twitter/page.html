@@ -7,3 +7,13 @@
     {{ content }}
   </div>
 </div>
+
+<script type="text/javascript">
+  $(function () {
+    $('.content .row a').tooltip({
+      title: function () {
+        return $(this).attr('alt');
+      }
+    });
+  })
+</script>
