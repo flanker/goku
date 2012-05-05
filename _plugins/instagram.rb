@@ -14,20 +14,20 @@ end
 #
 # Usage:
 #
-#	{% instagram accesstokenpath:C:\instagram-access-token.txt %}
-#		<div>
-#			<h3>{{ item.caption.text }}</h3>
-#			<img src="{{ item.images.standard_resolution.url }}" />
-#		</div>
-#	{% endinstagram %}
+#  {% instagram accesstokenpath:C:\instagram-access-token.txt %}
+#    <div>
+#      <h3>{{ item.caption.text }}</h3>
+#      <img src="{{ item.images.standard_resolution.url }}" />
+#    </div>
+#  {% endinstagram %}
 #
 # Parameters:
 #   accesstokenpath: the path to a text file containing an oauth access token for Instagram
 
 class InstagramLoader
-	class << self
-		def photos(accesstokenpath, page_size = 50, next_max_id = nil)
-			client = create_client(accesstokenpath)
+  class << self
+    def photos(accesstokenpath, page_size = 50, next_max_id = nil)
+      client = create_client(accesstokenpath)
       data = []
       begin
         result = client.self_media(:count => page_size, :max_id => next_max_id)
@@ -35,14 +35,14 @@ class InstagramLoader
         next_max_id = result.pagination.next_max_id
       end while next_max_id
       data
-		end
+    end
 
     def create_client(accesstokenpath)
       accesstokenfile = File.expand_path(File.dirname(__FILE__) + '/../' + accesstokenpath)
       accesstoken = File.open(accesstokenfile).gets
       Instagram.client(:access_token => accesstoken)
     end
-	end
+  end
 end
 
 
@@ -74,7 +74,7 @@ module Jekyll
     def render(context)
       context.registers[:instagram] ||= Hash.new(0)
 
-	  collection = InstagramLoader.photos(@accesstoken)
+      collection = InstagramLoader.photos(@accesstoken)
 
       length = collection.length
       result = []
