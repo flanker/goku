@@ -9,8 +9,20 @@ group: navigation
 
 <ul class="thumbnails">
 {% instagram accesstokenpath:instagram %}
-<li class="span2">
-<a href="{{ item.link }}" class="thumbnail"><img src="{{ item.images.thumbnail.url }}" /></a>
-</li>
+  <li class="span2">
+    <a href="{{ item.link }}" class="thumbnail" alt="{{ item.caption.text }}">
+      <img title="{{ item.caption.text }}" src="{{ item.images.thumbnail.url }}" />
+    </a>
+  </li>
 {% endinstagram %}
 </ul>
+
+<script type="text/javascript">
+  $(function () {
+    $('li.span2').tooltip({
+      title: function () {
+        return $('img', this).attr('title');
+      }
+    });
+  })
+</script>
