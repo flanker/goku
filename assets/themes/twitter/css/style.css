@@ -68,4 +68,21 @@ html, body {
 	border:1px solid #4C964D;
 	color:#FFF;
 }
-	
+
+/* override ======================================================== */
+
+#photo a.thumbnail:hover {
+  border-color:#0088cc;
+  -webkit-box-shadow:0 1px 4px rgba(0, 105, 214, 0.25);
+  -moz-box-shadow:0 1px 4px rgba(0, 105, 214, 0.25);
+  box-shadow:0 1px 4px rgba(0, 105, 214, 0.25);
+  -webkit-transition: all 800ms ease;
+  -moz-transition: all 800ms ease;
+  -o-transition: all 800ms ease;
+  transition: all 800ms ease;
+  -moz-transform: scale(1.1) rotate(-4deg) translate(0px, 0px) skew(0deg, 0deg);
+  -webkit-transform: scale(1.1) rotate(-4deg) translate(0px, 0px) skew(0deg, 0deg);
+  -o-transform: scale(1.1) rotate(-4deg) translate(0px, 0px) skew(0deg, 0deg);
+  -ms-transform: scale(1.1) rotate(-4deg) translate(0px, 0px) skew(0deg, 0deg);
+  transform: scale(1.1) rotate(-4deg) translate(0px, 0px) skew(0deg, 0deg);
+}
