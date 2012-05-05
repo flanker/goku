@@ -11,10 +11,10 @@ paginate: 5
 # Themes are encouraged to use these universal variables
 # so be sure to set them if your theme uses them.
 #
-title : Feng Zhichao's blog
-tagline: Feng Zhichao's blog
+title : 冯智超 feng zhichao
+tagline: feng zhichao
 author :
-  name : Feng Zhichao
+  name : feng zhichao
   email : flankerfc@gamil.com
   github : flanker
   twitter : fengzhichao
