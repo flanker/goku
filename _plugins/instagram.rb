@@ -2,6 +2,15 @@ require 'yaml'
 require 'jekyll'
 require 'instagram'
 
+module Instagram
+  class Client
+    def self_media(options)
+      p 'Request Instagram - api: users/self/media/recent options: ' + options.to_s
+      get('users/self/media/recent', options)
+    end
+  end
+end
+
 #
 # Usage:
 #
@@ -17,12 +26,22 @@ require 'instagram'
 
 class InstagramLoader
 	class << self
-		def photos(accesstokenpath)
-			accesstokenfile = File.expand_path(File.dirname(__FILE__) + '/../' + accesstokenpath)
-			accesstoken = File.open(accesstokenfile).gets
-			client = Instagram.client(:access_token => accesstoken)
-			client.user_recent_media
+		def photos(accesstokenpath, page_size = 50, next_max_id = nil)
+			client = create_client(accesstokenpath)
+      data = []
+      begin
+        result = client.self_media(:count => page_size, :max_id => next_max_id)
+        data += result.data
+        next_max_id = result.pagination.next_max_id
+      end while next_max_id
+      data
 		end
+
+    def create_client(accesstokenpath)
+      accesstokenfile = File.expand_path(File.dirname(__FILE__) + '/../' + accesstokenpath)
+      accesstoken = File.open(accesstokenfile).gets
+      Instagram.client(:access_token => accesstoken)
+    end
 	end
 end
 
