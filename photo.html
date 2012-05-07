@@ -11,8 +11,33 @@ group: navigation
 {% instagram accesstokenpath:instagram %}
   <li class="item span2">
     <a href="{{ item.link }}" class="thumbnail" alt="{{ item.caption.text }}">
-      <img title="{{ item.caption.text }}" src="{{ item.images.thumbnail.url }}" />
+      <img title="{{ item.caption.text }}" src="{{ item.images.thumbnail.url }}" data-image="{{ item.images.standard_resolution.url }}" />
     </a>
   </li>
 {% endinstagram %}
 </ul>
+
+<div id="modalBox" class="modal" style="display: none">
+  <div class="modal-header">
+    <button class="close" data-dismiss="modal">×</button>
+    <h3>Modal header</h3>
+  </div>
+  <div class="modal-body">
+    <img id="modalImage" src="" title="" />
+  </div>
+</div>
+
+<script type="text/javascript">
+  $(function () {
+    $('.item a').click(function (e) {
+      e.preventDefault();
+      $image = $('img', this);
+      $('#modalBox h3').text($image.attr('title') || 'untitled');
+      $('#modalImage').attr({
+        'src': $image.attr('data-image'),
+        'title': $image.attr('title') || 'untitled'
+      });
+      $('#modalBox').modal();
+    });
+  });
+</script>
