@@ -71,11 +71,12 @@ html, body {
 
 /* override ======================================================== */
 
-#photo a.thumbnail:hover {
+#photo .thumbnail:hover {
   border-color:#0088cc;
   -webkit-box-shadow:0 1px 4px rgba(0, 105, 214, 0.25);
   -moz-box-shadow:0 1px 4px rgba(0, 105, 214, 0.25);
   box-shadow:0 1px 4px rgba(0, 105, 214, 0.25);
+  -ms-transition: all 800ms ease;
   -webkit-transition: all 800ms ease;
   -moz-transition: all 800ms ease;
   -o-transition: all 800ms ease;
@@ -88,7 +89,42 @@ html, body {
 }
 
 .tooltip-inner {
-  box-shadow: 0 0 10px 3px white;
   -moz-box-shadow: 0 0 10px 3px white;
   -webkit-box-shadow: 0 0 10px 3px white;
+  box-shadow: 0 0 10px 3px white;
+}
+
+.modal {
+  background-color: transparent;
+  border-top: 0;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.modal-header {
+  padding: 0;
+}
+.modal-title {
+  padding: 4px 10px;
+  display: inline-block;
+  background-color: white;
+  -webkit-border-top-left-radius: 10px 10px;
+  -webkit-border-top-right-radius: 10px 10px;
+  -moz-border-radius-topleft: 5px;
+  -moz-border-radius-topright: 5px;
+  border-top-left-radius: 10px 10px;
+  border-top-right-radius: 10px 10px;
+}
+.modal-header .close {
+  background-color: white;
+  border: none;
+  margin-top: 12px;
+  opacity: 1;
+  -moz-opacity: 1;
+  filter:alpha(opacity=1);
+  border-top-left-radius: 5px 5px;
+  border-top-right-radius: 5px 5px;
+}
+.modal-body {
+  background-color: white;
 }
