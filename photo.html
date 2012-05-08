@@ -31,6 +31,7 @@ group: navigation
   $(function () {
     $('.item a').click(function (e) {
       e.preventDefault();
+      $(this).tooltip('hide');
       $image = $('img', this);
       $('#modalBox .modal-title').text($image.attr('title') || 'untitled');
       $('#modalImage').attr({
