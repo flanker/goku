@@ -86,3 +86,9 @@ html, body {
   -ms-transform: scale(1.1) rotate(-4deg) translate(0px, 0px) skew(0deg, 0deg);
   transform: scale(1.1) rotate(-4deg) translate(0px, 0px) skew(0deg, 0deg);
 }
+
+.tooltip-inner {
+  box-shadow: 0 0 10px 3px white;
+  -moz-box-shadow: 0 0 10px 3px white;
+  -webkit-box-shadow: 0 0 10px 3px white;
+}
