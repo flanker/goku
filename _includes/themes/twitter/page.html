@@ -10,6 +10,7 @@
 
 <script type="text/javascript">
   $(function () {
+    $('.content .row a img').removeAttr('title');
     $('.content .row a').tooltip({
       title: function () {
         return $(this).attr('alt');
