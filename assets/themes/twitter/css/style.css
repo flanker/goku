@@ -137,3 +137,70 @@ html, body {
   -moz-border-radius: 2px 2px;
   border-radius: 2px 2px;
 }
+
+.wrapper {
+  color: black;
+  font-size: 1.2em;
+}
+
+.wrapper div {
+  position: absolute;
+  z-index: 10000;
+}
+
+.wrapper .start {
+  top: 0;
+  left: 180px;
+  width: 440px;
+}
+
+.wrapper .birth {
+  top: 740px;
+  left: 180px;
+  width: 440px;
+}
+
+.wrapper .first-blood {
+  top: 1510px;
+  left: 430px;
+  width: 400px;
+}
+
+.wrapper .learning-computer {
+  top: 1540px;
+  left: 1600px;
+  width: 400px;
+}
+
+.wrapper .high-school {
+  left: 2185px;
+  top: 660px;
+  width: 460px;
+  -ms-transform: rotate(-90deg) translateY(2.5em);
+  -o-transform: rotate(-90deg) translateY(2.5em);
+  -webkit-transform: rotate(-90deg) translateY(2.5em);
+  -moz-transform: rotate(-90deg) translateY(2.5em);
+  transform: rotate(-90deg) translateY(2.5em);
+}
+
+.wrapper .college-entrance {
+  left: 2200px;
+  top: -800px;
+  width: 400px;
+  -ms-transform: rotate(90deg) translateX(50px);
+  -webkit-transform: rotate(90deg) translateX(50px);
+  -moz-transform: rotate(90deg) translateX(50px);
+  -o-transform: rotate(90deg) translateX(50px);
+  transform: rotate(90deg) translateX(50px);
+}
+
+.wrapper .university {
+  width: 475px;
+  left: 1100px;
+  top: -950px;
+  -ms-transform: rotate(90deg) translateX(50px);
+  -webkit-transform: rotate(90deg) translateX(50px);
+  -moz-transform: rotate(90deg) translateX(50px);
+  -o-transform: rotate(90deg) translateX(50px);
+  transform: rotate(90deg) translateX(50px);
+}
