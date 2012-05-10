@@ -13,7 +13,7 @@
     $('.content .row a img').removeAttr('title');
     $('.content .row a').tooltip({
       title: function () {
-        return $(this).attr('alt');
+        return $(this).attr('alt') || 'untitled';
       }
     });
   })
