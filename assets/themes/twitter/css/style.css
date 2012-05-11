@@ -146,34 +146,40 @@ html, body {
 .wrapper div {
   position: absolute;
   z-index: 10000;
+  background-color: white;
+  padding: 10px;
 }
 
 .wrapper .start {
-  top: 0;
-  left: 180px;
-  width: 440px;
+  top: 50px;
+  left: 135px;
+  width: 240px;
+  box-shadow: -3px 2px 5px gray, -3px -2px 5px gray;
 }
 
 .wrapper .birth {
-  top: 740px;
-  left: 180px;
-  width: 440px;
+  top: 680px;
+  left: 405px;
+  width: 200px;
+  box-shadow: 3px -3px 5px gray, 3px 3px 5px gray;
 }
 
 .wrapper .first-blood {
-  top: 1510px;
   left: 430px;
   width: 400px;
+  top: 1469px;
+  box-shadow: 2px -3px 5px gray, -2px -3px 5px gray;
 }
 
 .wrapper .learning-computer {
-  top: 1540px;
-  left: 1600px;
+  top: 1605px;
+  left: 1380px;
   width: 400px;
+  box-shadow: 2px 3px 5px gray, -2px 3px 5px gray;
 }
 
 .wrapper .high-school {
-  left: 2185px;
+  left: 2180px;
   top: 660px;
   width: 460px;
   -ms-transform: rotate(-90deg) translateY(2.5em);
@@ -181,26 +187,29 @@ html, body {
   -webkit-transform: rotate(-90deg) translateY(2.5em);
   -moz-transform: rotate(-90deg) translateY(2.5em);
   transform: rotate(-90deg) translateY(2.5em);
+  box-shadow: 2px 3px 5px gray, -2px 3px 5px gray;
 }
 
 .wrapper .college-entrance {
-  left: 2200px;
-  top: -800px;
+  left: 2240px;
+  top: -600px;
   width: 400px;
   -ms-transform: rotate(90deg) translateX(50px);
   -webkit-transform: rotate(90deg) translateX(50px);
   -moz-transform: rotate(90deg) translateX(50px);
   -o-transform: rotate(90deg) translateX(50px);
   transform: rotate(90deg) translateX(50px);
+  box-shadow: 2px -3px 5px gray, -2px -3px 5px gray;
 }
 
 .wrapper .university {
   width: 475px;
   left: 1100px;
-  top: -950px;
+  top: -695px;
   -ms-transform: rotate(90deg) translateX(50px);
   -webkit-transform: rotate(90deg) translateX(50px);
   -moz-transform: rotate(90deg) translateX(50px);
   -o-transform: rotate(90deg) translateX(50px);
   transform: rotate(90deg) translateX(50px);
+  box-shadow: 3px 2px 5px gray, 3px -2px 5px gray;
 }
