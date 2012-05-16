@@ -74,11 +74,8 @@ html {
   overflow-y: scroll;
 }
 
-.navbar {
-  position: absolute;
-  margin: 0 auto;
-  width: 100%;
-  z-index: 200;
+.content {
+  margin-top: 40px;
 }
 
 #photo .thumbnail:hover {
