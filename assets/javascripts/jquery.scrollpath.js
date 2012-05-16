@@ -364,7 +364,7 @@
 		var canvas,
 			style = {
 				position: "absolute",
-				"z-index": 9998,
+				"z-index": 99,
 				left: pathObject.getPathOffsetX(),
 				top: pathObject.getPathOffsetY(),
 				"pointer-events": "none"

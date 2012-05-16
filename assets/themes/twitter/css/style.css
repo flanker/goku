@@ -70,6 +70,16 @@ html, body {
 }
 
 /* override ======================================================== */
+html {
+  overflow-y: scroll;
+}
+
+.navbar {
+  position: absolute;
+  margin: 0 auto;
+  width: 100%;
+  z-index: 200;
+}
 
 #photo .thumbnail:hover {
   border-color:#0088cc;
@@ -138,47 +148,47 @@ html, body {
   border-radius: 2px 2px;
 }
 
-.wrapper {
+.timeline {
   color: black;
   font-size: 1.2em;
 }
 
-.wrapper div {
+.timeline-tag {
   position: absolute;
-  z-index: 10000;
+  z-index: 100;
   background-color: white;
   padding: 10px;
 }
 
-.wrapper .start {
+.start {
   top: 50px;
   left: 135px;
   width: 240px;
   box-shadow: -3px 2px 5px gray, -3px -2px 5px gray;
 }
 
-.wrapper .birth {
+.birth {
   top: 680px;
   left: 405px;
   width: 200px;
   box-shadow: 3px -3px 5px gray, 3px 3px 5px gray;
 }
 
-.wrapper .first-blood {
+.first-blood {
   left: 430px;
   width: 400px;
   top: 1469px;
   box-shadow: 2px -3px 5px gray, -2px -3px 5px gray;
 }
 
-.wrapper .learning-computer {
+.learning-computer {
   top: 1605px;
   left: 1380px;
   width: 400px;
   box-shadow: 2px 3px 5px gray, -2px 3px 5px gray;
 }
 
-.wrapper .high-school {
+.high-school {
   left: 2180px;
   top: 660px;
   width: 460px;
@@ -190,7 +200,7 @@ html, body {
   box-shadow: 2px 3px 5px gray, -2px 3px 5px gray;
 }
 
-.wrapper .college-entrance {
+.college-entrance {
   left: 2240px;
   top: -600px;
   width: 400px;
@@ -202,7 +212,7 @@ html, body {
   box-shadow: 2px -3px 5px gray, -2px -3px 5px gray;
 }
 
-.wrapper .university {
+.university {
   width: 475px;
   left: 1100px;
   top: -695px;

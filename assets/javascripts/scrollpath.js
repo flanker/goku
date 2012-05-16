@@ -25,5 +25,5 @@ $(function () {
 		.arc(1300, 50, 900, -Math.PI/2, -Math.PI, true, {rotate: Math.PI*2, name: "end"});
 
 	// We're done with the path, let's initate the plugin on our wrapper element
-	$(".wrapper").scrollPath({drawPath: true, wrapAround: true});
+	$(".timeline").scrollPath({drawPath: true, wrapAround: true});
 });
