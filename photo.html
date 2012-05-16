@@ -7,12 +7,18 @@ group: navigation
 ---
 {% include JB/setup %}
 
-<ul id="photo" class="thumbnails">
+<ul class="photo thumbnails">
 {% instagram accesstokenpath:instagram %}
   <li class="item span2">
-    <a href="{{ item.link }}" class="thumbnail" alt="{{ item.caption.text }}">
-      <img title="{{ item.caption.text }}" src="{{ item.images.thumbnail.url }}" data-image="{{ item.images.standard_resolution.url }}" />
-    </a>
+    <div class="thumbnail">
+      <a href="{{ item.link }}" alt="{{ item.caption.text }}">
+        <img title="{{ item.caption.text }}" src="{{ item.images.thumbnail.url }}" width="130" height="130" data-image="{{ item.images.standard_resolution.url }}" />
+      </a>
+      {% if item.caption.text %}<p>{{ item.caption.text }}</p>{% endif %}
+      {% if item.location.name %}<p>@{{ item.location.name }}</p>{% endif %}
+      {% if item.likes.count != 0 %}<p>{{ item.likes.count }} likes</p>{% endif %}
+      {% if item.comments.count != 0 %}<p>{{ item.comments.count }} comments</p>{% endif %}
+    </div>
   </li>
 {% endinstagram %}
 </ul>
@@ -26,9 +32,16 @@ group: navigation
     <img id="modalImage" src="" title="" />
   </div>
 </div>
-
+<script type="text/javascript" src="/assets/javascripts/jquery.masonry.min.js"></script>
 <script type="text/javascript">
   $(function () {
+
+    var $container = $('.photo');
+    $container.imagesLoaded( function(){
+      $container.masonry({
+        itemSelector : '.item'
+      });
+    });
 
     var popModal = function(title, image) {
       $('#modalBox .modal-title').text(title);

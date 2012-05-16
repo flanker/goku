@@ -78,23 +78,6 @@ html {
   margin-top: 40px;
 }
 
-#photo .thumbnail:hover {
-  border-color:#0088cc;
-  -webkit-box-shadow:0 1px 4px rgba(0, 105, 214, 0.25);
-  -moz-box-shadow:0 1px 4px rgba(0, 105, 214, 0.25);
-  box-shadow:0 1px 4px rgba(0, 105, 214, 0.25);
-  -ms-transition: all 800ms ease;
-  -webkit-transition: all 800ms ease;
-  -moz-transition: all 800ms ease;
-  -o-transition: all 800ms ease;
-  transition: all 800ms ease;
-  -moz-transform: scale(1.1) rotate(-4deg) translate(0px, 0px) skew(0deg, 0deg);
-  -webkit-transform: scale(1.1) rotate(-4deg) translate(0px, 0px) skew(0deg, 0deg);
-  -o-transform: scale(1.1) rotate(-4deg) translate(0px, 0px) skew(0deg, 0deg);
-  -ms-transform: scale(1.1) rotate(-4deg) translate(0px, 0px) skew(0deg, 0deg);
-  transform: scale(1.1) rotate(-4deg) translate(0px, 0px) skew(0deg, 0deg);
-}
-
 .tooltip-inner {
   -moz-box-shadow: 0 0 10px 3px white;
   -webkit-box-shadow: 0 0 10px 3px white;
@@ -219,4 +202,30 @@ html {
   -o-transform: rotate(90deg) translateX(50px);
   transform: rotate(90deg) translateX(50px);
   box-shadow: 3px 2px 5px gray, 3px -2px 5px gray;
+}
+
+
+/* photo --------------------*/
+.photo .thumbnail:hover {
+  border-color:#0088cc;
+  -webkit-box-shadow:0 1px 4px rgba(0, 105, 214, 0.25);
+  -moz-box-shadow:0 1px 4px rgba(0, 105, 214, 0.25);
+  box-shadow:0 1px 4px rgba(0, 105, 214, 0.25);
+  -ms-transition: all 800ms ease;
+  -webkit-transition: all 800ms ease;
+  -moz-transition: all 800ms ease;
+  -o-transition: all 800ms ease;
+  transition: all 800ms ease;
+  -moz-transform: scale(1.1) rotate(-4deg) translate(0px, 0px) skew(0deg, 0deg);
+  -webkit-transform: scale(1.1) rotate(-4deg) translate(0px, 0px) skew(0deg, 0deg);
+  -o-transform: scale(1.1) rotate(-4deg) translate(0px, 0px) skew(0deg, 0deg);
+  -ms-transform: scale(1.1) rotate(-4deg) translate(0px, 0px) skew(0deg, 0deg);
+  transform: scale(1.1) rotate(-4deg) translate(0px, 0px) skew(0deg, 0deg);
+}
+
+.photo .thumbnail p {
+  margin: 2px 0;
+  font-size: 11px;
+  line-height: 14px;
+  color: gray;
 }
