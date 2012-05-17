@@ -6,7 +6,15 @@ module Instagram
   class Client
     def self_media(options)
       p 'Request Instagram - api: users/self/media/recent options: ' + options.to_s
-      get('users/self/media/recent', options)
+      result = get('users/self/media/recent', options)
+      return with_readable_time(result.data), result.pagination.next_max_id
+    end
+
+    def with_readable_time(data)
+      data.map do |image|
+        image[:readable_created_time] = pretty_date(image.created_time)
+        image
+      end
     end
   end
 end
@@ -28,13 +36,12 @@ class InstagramLoader
   class << self
     def photos(accesstokenpath, page_size = 50, next_max_id = nil)
       client = create_client(accesstokenpath)
-      data = []
+      data_set = []
       begin
-        result = client.self_media(:count => page_size, :max_id => next_max_id)
-        data += result.data
-        next_max_id = result.pagination.next_max_id
+        data, next_max_id = client.self_media(:count => page_size, :max_id => next_max_id)
+        data_set += data
       end while next_max_id
-      data
+      data_set
     end
 
     def create_client(accesstokenpath)

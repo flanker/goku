@@ -15,6 +15,7 @@ group: navigation
         <img title="{{ item.caption.text }}" src="{{ item.images.thumbnail.url }}" width="130" height="130" data-image="{{ item.images.standard_resolution.url }}" />
       </a>
       {% if item.caption.text %}<p>{{ item.caption.text }}</p>{% endif %}
+      <p>{{ item.readable_created_time }}</p>
       {% if item.location.name %}<p>@{{ item.location.name }}</p>{% endif %}
       {% if item.likes.count != 0 %}<p>{{ item.likes.count }} likes</p>{% endif %}
       {% if item.comments.count != 0 %}<p>{{ item.comments.count }} comments</p>{% endif %}
