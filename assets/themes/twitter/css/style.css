@@ -5,11 +5,26 @@
 .start {
   margin-top: 60px;
   background: url(/images/site/fengzhichao-jumping.jpg) no-repeat center;
-  height: 500px;
-  padding-top: 300px;
+  height: 800px;
 }
 .welcome-message {
+  padding-top: 300px;
   width: 940px;
   margin: 0 auto;
   color: black;
+}
+.timeline {
+  width: 940px;
+  margin: 50px auto;
+}
+.about {
+  background: url(/images/site/my-macbook.jpg) no-repeat center;
+  height: 800px;
+}
+.about-message {
+  padding-top: 100px;
+  padding-right: 50px;
+  text-align: right;
+  width: 940px;
+  margin: 0 auto;
 }
