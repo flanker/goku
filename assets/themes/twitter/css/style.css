@@ -1,3 +1,11 @@
+.socials {
+  float: right;
+  padding-top: 30px;
+  padding-right: 10px;
+}
+.socials li {
+  display: inline-block;
+}
 .page-container {
   margin-top: 60px;
   padding-top: 20px;
