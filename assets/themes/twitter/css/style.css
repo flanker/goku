@@ -2,3 +2,14 @@
   margin-top: 60px;
   padding-top: 20px;
 }
+.start {
+  margin-top: 60px;
+  background: url(/images/site/fengzhichao-jumping.jpg) no-repeat center;
+  height: 500px;
+  padding-top: 300px;
+}
+.welcome-message {
+  width: 940px;
+  margin: 0 auto;
+  color: black;
+}
