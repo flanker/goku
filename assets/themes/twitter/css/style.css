@@ -31,17 +31,16 @@
 }
 
 @media (max-device-width: 320px) {
-/*  img, object {
+  img, object {
     max-width: 320px;
-  }
-*/
-  .slideshare {
-    width: 100%;
   }
   .navbar-fixed-top .container,
   .container,
   .span12 {
     width: 100%;
+    margin: 0;
+  }
+  .row {
     margin: 0;
   }
   .span2, .span8, .span4 {
