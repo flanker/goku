@@ -50,15 +50,33 @@
   }
   .span2 img {
     width: 90%;
-        margin-left: auto;
+    margin-left: auto;
     margin-right: auto;
+  }
+  .navbar-inner {
+    min-height: 40px
   }
   .navbar .brand {
     font-size: 22px;
+    padding-top: 8px;
+    padding-bottom: 2px;
   }
   .navbar .nav > li > a {
     font-size: 18px;
-    padding-top: 21px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    line-height: normal;
+  }
+  .page-container {
+    margin-top: 41px;
+  }
+  .page-container h1 {
+    font-size: 28px;
+    line-height: 32px;
+  }
+  .page-container h2 {
+    font-size: 22px;
+    line-height: 28px;
   }
   .start {
     height: 480px;
@@ -80,5 +98,9 @@
   .thumbnails > li a {
     display: block;
     text-align: center;
+  }
+  .page-header {
+    padding-bottom: 0;
+    margin: 31px 0 10px;
   }
 }
