@@ -1,28 +1,16 @@
-.socials {
-  float: right;
-  padding-top: 30px;
-  padding-right: 10px;
-}
-.socials li {
-  display: inline-block;
-}
 .page-container {
-  margin-top: 60px;
-  padding-top: 20px;
+  margin-top: 71px;
 }
 .start {
-  margin-top: 60px;
   background: url(/images/site/fengzhichao-jumping.jpg) no-repeat center;
   height: 800px;
 }
 .welcome-message {
   padding-top: 300px;
-  width: 940px;
   margin: 0 auto;
   color: black;
 }
 .timeline {
-  width: 940px;
   margin: 50px auto;
 }
 .about {
@@ -33,6 +21,65 @@
   padding-top: 100px;
   padding-right: 50px;
   text-align: right;
-  width: 940px;
   margin: 0 auto;
+}
+.center-text {
+  text-align: center;
+}
+.photo {
+  margin-top: 20px;
+}
+
+@media (max-device-width: 320px) {
+/*  img, object {
+    max-width: 320px;
+  }
+*/
+  .slideshare {
+    width: 100%;
+  }
+  .navbar-fixed-top .container,
+  .container,
+  .span12 {
+    width: 100%;
+    margin: 0;
+  }
+  .span2, .span8, .span4 {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .span2 img {
+    width: 90%;
+        margin-left: auto;
+    margin-right: auto;
+  }
+  .navbar .brand {
+    font-size: 22px;
+  }
+  .navbar .nav > li > a {
+    font-size: 18px;
+    padding-top: 21px;
+  }
+  .start {
+    height: 480px;
+  }
+  .timeline {
+    margin: 10px auto;
+  }
+  .about {
+    height: 480px;
+  }
+  .thumbnails {
+    margin: 10px 0;
+  }
+  .thumbnails > li {
+    float: none;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .thumbnails > li a {
+    display: block;
+    text-align: center;
+  }
 }

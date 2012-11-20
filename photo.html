@@ -36,6 +36,9 @@ group: navigation
 <script type="text/javascript" src="/assets/javascripts/jquery.masonry.min.js"></script>
 <script type="text/javascript">
   $(function () {
+    if (screen.width <= 320) {
+      return;
+    }
 
     var $container = $('.photo');
     $container.imagesLoaded( function(){
