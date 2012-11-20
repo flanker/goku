@@ -98,6 +98,6 @@ status: publish
 
 #### P.S.
 
-参考 [https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Function/bind](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Function/bind)
+参考 [mozilla developer](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Function/bind)
 
 ECMAScript 是标准，ECMA-262，目前最新的是第5版。一般 Firefox 的实现叫做 JavaScript（最新在 Firefox4中支持到 JavaScript 1.8.5）；IE 中的实现叫 JScript。两者都是支持 ECMAScript 第三版的，但是对第五版的支持可能就不完全了。

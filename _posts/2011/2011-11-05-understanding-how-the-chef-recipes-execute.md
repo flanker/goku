@@ -68,7 +68,7 @@ chef 的 recipe 使用 ruby DSL 来写，语义十分明显。对于常用的部
 
 之所以出现这样一个结果，是和 chef recipe 执行的过程有关系的。
 
-我们在 chef recipe 中写的大部分代码，都是直接使用 chef 提供的 DSL，比如 `package`、`directory`、`bash`、`file`、`template` 等。这些在 chef 中都称作 resource。顾名思义，resource 只是表示了对系统某一个部分的抽象，我们的 `package "httpd"` 只是创建了一个 resourse （这个 resource 表示了一个需要安装的 package），但是并不是立即会去执行安装 package 的行为。
+我们在 chef recipe 中写的大部分代码，都是直接使用 chef 提供的 DSL，比如 `package`、 `directory`、 `bash`、 `file`、 `template` 等。这些在 chef 中都称作 resource。顾名思义，resource 只是表示了对系统某一个部分的抽象，我们的 `package "httpd"` 只是创建了一个 resourse （这个 resource 表示了一个需要安装的 package），但是并不是立即会去执行安装 package 的行为。
 
 而 resource 的最终执行，是通过 provider 来实现的。一个 resource 至少需要 一个 provider。大部分的 resource 都会对应多个 provider，真正执行时，chef 会根据操作系统类型等来确定使用哪一个 provider。还是拿 `package` 举例，这个 resource 表示对系统中一个包的操作（默认是安装），对应的 provider 根据系统的不同，就会有 `rpm`、`apt-get`、`yum`、`dpkg`，以及 `rubygem`、`macports` 等等不同的包管理器来执行。
 

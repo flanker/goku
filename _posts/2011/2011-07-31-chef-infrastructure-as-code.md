@@ -93,11 +93,11 @@ fasdfds
 asdf
 
 <div class="slideshare" id="__ss_8737820">
-   <strong style="display:block;margin:12px 0 4px">
+   <strong>
     <a href="http://www.slideshare.net/flankerfc/chef-introduction-8737820" title="Chef introduction" target="_blank">Chef introduction</a>
   </strong>
-  <iframe src="http://www.slideshare.net/slideshow/embed_code/8737820" width="425" height="355" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
-  <div style="padding:5px 0 12px">
+  <iframe src="http://www.slideshare.net/slideshow/embed_code/8737820" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+  <div>
     View more <a href="http://www.slideshare.net/" target="_blank">presentations</a> from <a href="http://www.slideshare.net/flankerfc" target="_blank">flankerfc</a>
   </div>
 </div>
