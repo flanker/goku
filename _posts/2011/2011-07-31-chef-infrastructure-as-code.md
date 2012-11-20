@@ -89,9 +89,11 @@ Chef 配置机器有三种模式：
 这些就是基本的 chef 操作，下载下来的 cookbook 我们可以学习，然后写自己的 cookbook， 可以参考 [chef 的 wiki](http://wiki.opscode.com/display/chef/Home)。
 
 下面附一个自己总结 session 的 ppt：
+fasdfds
+asdf
 
 <div class="slideshare" id="__ss_8737820">
-  <strong style="display:block;margin:12px 0 4px">
+   <strong style="display:block;margin:12px 0 4px">
     <a href="http://www.slideshare.net/flankerfc/chef-introduction-8737820" title="Chef introduction" target="_blank">Chef introduction</a>
   </strong>
   <iframe src="http://www.slideshare.net/slideshow/embed_code/8737820" width="425" height="355" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
