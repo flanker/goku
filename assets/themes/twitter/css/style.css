@@ -69,6 +69,8 @@
   }
   .page-container {
     margin-top: 41px;
+    word-wrap: break-word;
+    overflow: hidden;
   }
   .page-container h1 {
     font-size: 28px;
