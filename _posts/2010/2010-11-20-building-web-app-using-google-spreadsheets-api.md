@@ -43,7 +43,7 @@ Google Spreadsheets API 其实是整个 [Google Data Protocol](http://code.googl
 
     http://spreadsheets.google.com/feeds/list/0ApprjhYB-ZEVdDQ3TDI0ZTF2WWo5bGg5akRqeW5wRXc/od6/public/values
 
-* >spreadsheets.google.com/feeds/ 表示请求 Google Spreadsheets 的 Feed 数据
+* spreadsheets.google.com/feeds/ 表示请求 Google Spreadsheets 的 Feed 数据
 * list 表示请求的 [Feet类型](http://code.google.com/apis/spreadsheets/data/3.0/reference.html#Feeds). 这里有 spreadsheets(整个文档)/worksheets(工作表) /list(某张工作表的行列)/cells(单元格)等若干类型
 * 0ApprjhYB-ZEVdDQ3TDI0ZTF2WWo5bGg5akRqeW5wRXc 是文档的 Key. 这个在编辑发布文档时都可以看到
 * od6 在这里是第一个工作表, 也可以用1来替换
