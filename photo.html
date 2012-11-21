@@ -12,7 +12,7 @@ group: navigation
   <li class="item span2">
     <div class="thumbnail">
       <a href="{{ item.link }}" alt="{{ item.caption.text }}">
-        <img title="{{ item.caption.text }}" src="{{ item.images.thumbnail.url }}" width="130" height="130" data-image="{{ item.images.standard_resolution.url }}" />
+        <img title="{{ item.caption.text }}" src="{{ item.images.low_resolution.url }}" width="130" height="130" data-image="{{ item.images.standard_resolution.url }}" />
       </a>
       {% if item.caption.text %}<p>{{ item.caption.text }}</p>{% endif %}
       <p>{{ item.readable_created_time }}</p>
