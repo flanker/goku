@@ -9,7 +9,7 @@ group: navigation
 
 <ul class="photo thumbnails">
 {% instagram accesstokenpath:instagram %}
-  <li class="item span2">
+  <li class="item">
     <div class="thumbnail">
       <a href="{{ item.link }}" alt="{{ item.caption.text }}">
         <img title="{{ item.caption.text }}" src="{{ item.images.low_resolution.url }}" width="130" height="130" data-image="{{ item.images.standard_resolution.url }}" />
@@ -33,6 +33,7 @@ group: navigation
     <img id="modalImage" src="" title="" />
   </div>
 </div>
+
 <script type="text/javascript" src="/assets/javascripts/jquery.masonry.min.js"></script>
 <script type="text/javascript">
   $(function () {

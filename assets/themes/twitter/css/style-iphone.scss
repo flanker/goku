@@ -1,0 +1,120 @@
+---
+name : style-iphone.scss
+---
+
+@media (max-device-width: 320px) {
+
+  img, object {
+    width: auto;
+  }
+  .slideshare iframe {
+    width: auto;
+    height: auto;
+  }
+  footer p {
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-family: 'Ubuntu', Tahoma, sans-serif;
+  }
+
+  .navbar-fixed-top .navbar-inner {
+    min-height: 40px;
+    width: 100%;
+
+    .container {
+      width: auto;
+      margin: 0 10px;
+
+      .brand {
+        font-size: 22px;
+        padding-top: 8px;
+        padding-bottom: 2px;
+      }
+      .nav > li > a {
+        font-size: 18px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        line-height: normal;
+      }
+    }
+  }
+
+  .page-container {
+    width: 100%;
+    margin: 0;
+    margin-top: 41px;
+    word-wrap: break-word;
+    overflow: hidden;
+
+    h1 {
+      font-size: 28px;
+      line-height: 32px;
+    }
+    h2 {
+      font-size: 22px;
+      line-height: 28px;
+    }
+  }
+
+  .hero-box .hero-box-inner {
+    width: auto;
+  }
+  .start {
+    height: 480px;
+  }
+  .timeline {
+    margin: 10px auto;
+  }
+  .about {
+    height: 480px;
+  }
+
+  .blog-container {
+    width: auto;
+
+    .blog-container-inner {
+      margin-left: 10px;
+      margin-right: 10px;
+
+      .blog-header {
+        padding-bottom: 0;
+        margin: 10px 0 10px;
+      }
+      .blog-metadata {
+        float: none;
+        width: auto;
+        margin-left: 0;
+        font-family: 'Ubuntu', Tahoma, sans-serif;
+
+        .tag_box {
+          display: inline-block;
+          li {
+            display: inline-block;
+          }
+        }
+
+      }
+      .blog-content {
+        float: none;
+        width: auto;
+        margin-left: 0;
+      }
+    }
+  }
+
+  .thumbnails {
+    margin: 10px 0;
+
+    .item {
+      float: none;
+      width: auto;
+      margin-left: 0;
+      a {
+        display: block;
+        text-align: center;
+      }
+    }
+  }
+}

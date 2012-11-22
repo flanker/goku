@@ -1,0 +1,108 @@
+---
+name : style.scss
+---
+
+@import url(https://fonts.googleapis.com/css?family=Ubuntu);
+/* common */
+.page-container {
+  margin-top: 71px;
+}
+footer p {
+  width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-family: 'Ubuntu', Tahoma, sans-serif;
+}
+.slideshare iframe {
+  height: 400px;
+  width: 600px
+}
+
+/* index page */
+.hero-box {
+  .hero-box-inner {
+    width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.start {
+  background: url(/images/site/fengzhichao-jumping.jpg) no-repeat center;
+  height: 800px;
+
+  .welcome-message {
+    padding-top: 300px;
+    margin: 0 auto;
+    color: black;
+  }
+}
+.timeline {
+  margin: 20px auto;
+}
+.about {
+  background: url(/images/site/my-macbook.jpg) no-repeat center;
+  height: 800px;
+
+  .about-message {
+    padding-top: 100px;
+    padding-right: 50px;
+    text-align: right;
+    margin: 0 auto;
+  }
+}
+
+/* index page */
+.blog-container {
+  width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 10px;
+
+  &::after {
+    clear: both;
+    display: table;
+    content: "";
+    line-height: 0;
+  }
+
+  .blog-container-inner {
+    margin-left: 20px;
+
+    .article {
+      margin-bottom: 40px;
+      border-top: 3px dotted #e36b23;
+
+      .author {
+        font-family: 'Ubuntu', Tahoma, sans-serif;
+      }
+    }
+  }
+
+  .blog-header {
+    margin-bottom: 20px;
+  }
+  .blog-metadata {
+    float: right;
+    width: 280px;
+    margin-left: 20px;
+  }
+  .blog-content {
+    float: left;
+    width: 620px;
+    margin-left: 20px;
+  }
+}
+
+/* photo page */
+.photo {
+  margin-top: 20px;
+
+  .item {
+    width: 140px;
+    .thumbnail {
+      font-size: 14px;
+      line-height: 16px;
+    }
+  }
+}
