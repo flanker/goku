@@ -27,16 +27,26 @@ name : style-iphone.scss
       width: auto;
       margin: 0 10px;
 
+      .avatar {
+        height: 30px;
+        width: 30px;
+        margin: 5px;
+        margin-left: 0;
+        -webkit-border-radius: 15px;
+        border-radius: 15px;
+      }
       .brand {
         font-size: 22px;
-        padding-top: 8px;
-        padding-bottom: 2px;
+        padding: 0;
+        margin: 0;
+        line-height: 40px;
       }
       .nav > li > a {
         font-size: 18px;
-        padding-top: 5px;
-        padding-bottom: 5px;
-        line-height: normal;
+        padding: 0;
+        margin: 0;
+        margin-left: 20px;
+        line-height: 40px;
       }
     }
   }

@@ -18,6 +18,29 @@ footer p {
   height: 400px;
   width: 600px
 }
+.navbar-fixed-top .navbar-inner {
+
+  .avatar {
+    float: left;
+    height: 60px;
+    width: 60px;
+    margin: 5px 20px;
+    -webkit-border-radius: 30px;
+    border-radius: 30px;
+  }
+  .brand {
+    font-size: 22px;
+    padding-top: 0;
+    padding-bottom: 0;
+    line-height: 70px;
+  }
+  .nav > li > a {
+    font-size: 18px;
+    padding-top: 0;
+    padding-bottom: 0;
+    line-height: 70px;
+  }
+}
 
 /* index page */
 .hero-box {
