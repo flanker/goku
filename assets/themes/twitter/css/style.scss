@@ -20,6 +20,20 @@ footer p {
 }
 .navbar-fixed-top .navbar-inner {
 
+  .navbar-container {
+    width: 940px;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+
+    &::after {
+      display: table;
+      content: "";
+      line-height: 0;
+      clear: both;
+    }
+  }
+
   .avatar {
     float: left;
     height: 60px;
@@ -39,6 +53,47 @@ footer p {
     padding-top: 0;
     padding-bottom: 0;
     line-height: 70px;
+  }
+  .socials {
+    position: absolute;
+    right: 10px;
+    display: block;
+    margin: 0 10px 0 0;
+    list-style: none;
+
+    .twitter {
+      background: url(/images/site/social/twitter.png) no-repeat;
+    }
+    .facebook {
+      background: url(/images/site/social/facebook.png) no-repeat;
+    }
+    .github {
+      background: url(/images/site/social/github.png) no-repeat;
+    }
+    .youtube {
+      background: url(/images/site/social/youtube.png) no-repeat;
+    }
+
+    li {
+      float: left;
+
+      a {
+        width: 28px;
+        height: 28px;
+        margin: 21px 6px 6px 0;
+        display: block;
+        text-indent: -9999px;
+        background-position: 0 0px;
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        -ms-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+        &:hover {
+          background-position: 0 -38px;
+        }
+      }
+    }
   }
 }
 

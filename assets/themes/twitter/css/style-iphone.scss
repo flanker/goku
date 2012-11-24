@@ -23,7 +23,7 @@ name : style-iphone.scss
     min-height: 40px;
     width: 100%;
 
-    .container {
+    .navbar-container {
       width: auto;
       margin: 0 10px;
 
@@ -47,6 +47,9 @@ name : style-iphone.scss
         margin: 0;
         margin-left: 20px;
         line-height: 40px;
+      }
+      .socials {
+        display: none;
       }
     }
   }
