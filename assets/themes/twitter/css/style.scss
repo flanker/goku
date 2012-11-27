@@ -185,3 +185,11 @@ footer p {
     }
   }
 }
+.modal {
+  top: 10%;
+  left: 50%;
+  margin: 0 0 0 -280px;
+  .modal-body {
+    max-height: none;
+  }
+}
