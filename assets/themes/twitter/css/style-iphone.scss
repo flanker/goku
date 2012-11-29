@@ -2,7 +2,7 @@
 name : style-iphone.scss
 ---
 
-@media (max-device-width: 320px) {
+@media (max-width: 568px) {
 
   img, object {
     width: auto;
