@@ -68,16 +68,28 @@ footer p {
     list-style: none;
 
     .twitter {
-      background: url({{ site.static_url }}/images/site/social/twitter.png) no-repeat;
+      background: url({{ site.static_url }}/images/site/socials.png) -56px 0 no-repeat;
+      &:hover {
+        background-position: -56px -38px;
+      }
     }
     .facebook {
-      background: url({{ site.static_url }}/images/site/social/facebook.png) no-repeat;
+      background: url({{ site.static_url }}/images/site/socials.png) 0 0 no-repeat;
+      &:hover {
+        background-position: 0 -38px;
+      }
     }
     .github {
-      background: url({{ site.static_url }}/images/site/social/github.png) no-repeat;
+      background: url({{ site.static_url }}/images/site/socials.png) -28px 0 no-repeat;
+      &:hover {
+        background-position: -28px -38px;
+      }
     }
     .youtube {
-      background: url({{ site.static_url }}/images/site/social/youtube.png) no-repeat;
+      background: url({{ site.static_url }}/images/site/socials.png) -84px 0 no-repeat;
+      &:hover {
+        background-position: -84px -38px;
+      }
     }
 
     li {
@@ -95,9 +107,6 @@ footer p {
         -o-transition: all 0.3s ease-in-out;
         -ms-transition: all 0.3s ease-in-out;
         transition: all 0.3s ease-in-out;
-        &:hover {
-          background-position: 0 -38px;
-        }
       }
     }
   }
