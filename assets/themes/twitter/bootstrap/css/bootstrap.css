@@ -1,6 +1,16 @@
-@import url(https://fonts.googleapis.com/css?family=Oswald);
+@font-face {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Oswald Regular'), local('Oswald-Regular'), url({{ site.static_url }}/assets/fonts/oswald.woff) format('woff');
+}
 
-@import url(https://fonts.googleapis.com/css?family=Noticia+Text);
+@font-face {
+  font-family: 'Noticia Text';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Noticia Text'), local('NoticiaText-Regular'), url({{ site.static_url }}/assets/fonts/.woff) format('woff');
+}
 /*!
  * Bootstrap v2.2.1
  *

@@ -2,7 +2,13 @@
 name : style.scss
 ---
 
-@import url(https://fonts.googleapis.com/css?family=Ubuntu);
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Ubuntu'), url({{ site.static_url }}/assets/fonts/Ubuntu.woff) format('woff');
+}
+
 /* common */
 .page-container {
   margin-top: 71px;
@@ -62,16 +68,16 @@ footer p {
     list-style: none;
 
     .twitter {
-      background: url(/images/site/social/twitter.png) no-repeat;
+      background: url({{ site.static_url }}/images/site/social/twitter.png) no-repeat;
     }
     .facebook {
-      background: url(/images/site/social/facebook.png) no-repeat;
+      background: url({{ site.static_url }}/images/site/social/facebook.png) no-repeat;
     }
     .github {
-      background: url(/images/site/social/github.png) no-repeat;
+      background: url({{ site.static_url }}/images/site/social/github.png) no-repeat;
     }
     .youtube {
-      background: url(/images/site/social/youtube.png) no-repeat;
+      background: url({{ site.static_url }}/images/site/social/youtube.png) no-repeat;
     }
 
     li {
@@ -107,7 +113,7 @@ footer p {
   }
 }
 .start {
-  background: url(/images/site/fengzhichao-jumping.jpg) no-repeat center;
+  background: url({{ site.static_url }}/images/site/fengzhichao-jumping.jpg) no-repeat center;
   height: 800px;
 
   .welcome-message {
@@ -120,7 +126,7 @@ footer p {
   margin: 20px auto;
 }
 .about {
-  background: url(/images/site/my-macbook.jpg) no-repeat center;
+  background: url({{ site.static_url }}/images/site/my-macbook.jpg) no-repeat center;
   height: 800px;
 
   .about-message {
