@@ -41,7 +41,7 @@ author :
 #
 production_url : http://blog.chaojiwudi.com
 
-static_url: https://s3-us-west-1.amazonaws.com/chaojiwudi-a
+static_url: http://static.chaojiwudi.com
 
 # All Jekyll-Bootstrap specific configurations are namespaced into this hash
 #
