@@ -3,9 +3,6 @@ name : style.scss
 ---
 
 /* common */
-.page-container {
-  margin-top: 71px;
-}
 footer p {
   width: 940px;
   margin-left: auto;
@@ -16,7 +13,15 @@ footer p {
   height: 400px;
   width: 600px
 }
-.navbar-fixed-top .navbar-inner {
+.home .navbar-top {
+  position: absolute;
+  width: 980px;
+  left: 50%;
+  margin-left: -490px;
+}
+.navbar-top .navbar-inner {
+  background-color: transparent;
+  border: 0;
 
   .navbar-container {
     width: 940px;
