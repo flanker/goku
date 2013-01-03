@@ -4,7 +4,8 @@ name : style-iphone-landscape.scss
 
 @media (max-height: 320px) {
 
-  .navbar-fixed-top {
+  .navbar-top,
+  .home .navbar-top {
     width: 100px;
 
     .navbar-inner {

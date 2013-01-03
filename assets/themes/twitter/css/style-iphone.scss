@@ -18,10 +18,25 @@ name : style-iphone.scss
     text-align: center;
     font-family: 'Ubuntu', Tahoma, sans-serif;
   }
+  .home .navbar-top,
+  .navbar-top {
+    width: 100%;
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    margin: 0;
+    top: 0;
+  }
 
-  .navbar-fixed-top .navbar-inner {
+  .navbar-top .navbar-inner {
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    background-color: #2a333c;
     min-height: 40px;
     width: 100%;
+    padding: 0;
 
     .navbar-container {
       width: auto;
@@ -36,16 +51,16 @@ name : style-iphone.scss
         border-radius: 15px;
       }
       .brand {
-        font-size: 22px;
+        font-size: 20px;
         padding: 0;
         margin: 0;
         line-height: 40px;
       }
       .nav > li > a {
-        font-size: 18px;
+        font-size: 16px;
         padding: 0;
         margin: 0;
-        margin-left: 20px;
+        margin-left: 16px;
         line-height: 40px;
       }
       .socials {
