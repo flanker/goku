@@ -5036,14 +5036,14 @@ blockquote.pull-right {
   padding: 25px 20px 15px;
   font-family: 'Oswald', sans-serif;
   font-size: 30px;
-  text-shadow: -2px 2px 0 #612c0c;
+  text-shadow: -1px 1px 0 #612c0c;
 }
 .navbar .nav > li > a {
   padding: 23px 20px 13px;
   line-height: 30px;
   font-family: 'Oswald', sans-serif;
   font-size: 22px;
-  text-shadow: -2px 2px 0 #612c0c;
+  text-shadow: -1px 1px 0 #612c0c;
 }
 .navbar .brand:hover,
 .navbar .nav > li > a:hover,
@@ -5051,10 +5051,7 @@ blockquote.pull-right {
 .navbar .nav > li.dropdown.open > a,
 .navbar .nav > li.dropdown.open > a:hover {
   position: relative;
-  top: 1px;
-  left: -1px;
   color: #e36b23;
-  text-shadow: -1px 1px 0 #612c0c;
 }
 .navbar .nav > .active > a,
 .navbar .nav > .active > a:hover,
