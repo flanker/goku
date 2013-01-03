@@ -4,13 +4,6 @@
   font-weight: 400;
   src: local('Oswald Regular'), local('Oswald-Regular'), url({{ site.static_url }}/assets/fonts/oswald.woff) format('woff');
 }
-
-@font-face {
-  font-family: 'Noticia Text';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Noticia Text'), local('NoticiaText-Regular'), url({{ site.static_url }}/assets/fonts/oswald.woff) format('woff');
-}
 /*!
  * Bootstrap v2.2.1
  *
@@ -157,7 +150,7 @@ textarea {
 }
 body {
   margin: 0;
-  font-family: Georgia, Utopia, Palatino, 'Palatino Linotype', serif;
+  font-family: arial, sans-serif;
   font-size: 15px;
   line-height: 20px;
   color: #ece9d7;
@@ -5441,12 +5434,6 @@ div.subnav .nav > .active > a:hover .caret {
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
-}
-input,
-button,
-select,
-textarea {
-  font-family: 'Noticia Text', serif;
 }
 legend {
   border-bottom: none;
