@@ -21,13 +21,6 @@ Usage:
 -->{% endcomment %}
 
 
-{% if page.url == '/blog.html' %}
-<li class="active"><a href="/blog.html">blog</a></li>
-{% else %}
-<li><a href="/blog.html">blog</a></li>
-{% endif %}
-
-
 {% if site.JB.pages_list.provider == "custom" %}
   {% include custom/pages_list %}
 {% else %}
