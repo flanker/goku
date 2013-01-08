@@ -208,3 +208,25 @@ footer p {
     max-height: none;
   }
 }
+/* tags */
+.tag_box.inline {
+  list-style: none outside none;
+  li {
+    float: left;
+    margin:0 8px 8px 0;
+    padding: 0;
+
+    a {
+      padding: 3px 6px;
+      color: #ece9d7;
+      background: #45515f;
+      border-radius: 3px;
+      text-decoration: none;
+
+      span {
+        vertical-align: super;
+        font-size: 0.8em;
+      }
+    }
+  }
+}
