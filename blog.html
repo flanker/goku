@@ -6,22 +6,7 @@ header: Pages
 ---
 {% include JB/setup %}
 
-<!-- Pagination links -->
-<div class="pagination">
-  <ul>
-    {% if paginator.previous_page %}
-    <li><a href="/page{{paginator.previous_page}}/blog.html">Previous</a></li>
-    {% else %}
-    <li class="disabled"><a>Previous</a></li>
-    {% endif %}
-    <li class="disabled"><a>Page: {{paginator.page}} of {{paginator.total_pages}}</a></li>
-    {% if paginator.next_page %}
-    <li><a href="/page{{paginator.next_page}}/blog.html">Next</a></li>
-    {% else %}
-    <li class="disabled"><a>Next</a></li>
-    {% endif %}
-  </ul>
-</div>
+{% include views/blog_pagination.html %}
 
 {% for post in paginator.posts %}
 <div class="article">
@@ -35,19 +20,4 @@ header: Pages
 </div>
 {% endfor %}
 
-<!-- Pagination links -->
-<div class="pagination">
-  <ul>
-    {% if paginator.previous_page %}
-    <li><a href="/page{{paginator.previous_page}}/blog.html">Previous</a></li>
-    {% else %}
-    <li class="disabled"><a>Previous</a></li>
-    {% endif %}
-    <li class="disabled"><a>Page: {{paginator.page}} of {{paginator.total_pages}}</a></li>
-    {% if paginator.next_page %}
-    <li><a href="/page{{paginator.next_page}}/blog.html">Next</a></li>
-    {% else %}
-    <li class="disabled"><a>Next</a></li>
-    {% endif %}
-  </ul>
-</div>
+{% include views/blog_pagination.html %}
