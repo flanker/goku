@@ -91,13 +91,17 @@ name : style-iphone.scss
     padding: 0 10px;
   }
   .start {
+    background: url({{ site.static_url }}/images/site/fengzhichao-jumping-iphone.jpg) no-repeat center;
     height: 480px;
+    background-size: 320px 480px;
   }
   .timeline {
     margin: 10px auto;
   }
   .about {
+    background: url({{ site.static_url }}/images/site/my-macbook-iphone.jpg) no-repeat center;
     height: 480px;
+    background-size: 320px 480px;
   }
 
   .blog-container {
