@@ -123,17 +123,30 @@ footer p {
     margin-left: auto;
     margin-right: auto;
     padding: 0 20px;
+    font-size: 18px;
   }
 }
 .start {
   background: url({{ site.static_url }}/images/site/fengzhichao-jumping.jpg) no-repeat center;
   height: 800px;
 
-  .welcome-message {
-    padding-top: 300px;
-    margin: 0 auto;
-    color: black;
+  .start-inner {
+    width: 45%;
+    display: inline-block;
+    padding: 10px 0;
+    margin: 300px auto 0px;
+    background: rgba(100, 100, 100, .3);
+
+    .welcome-message {
+      display: inline-block;
+      float: right;
+      margin-right: 30px;
+      color: #e36b23;
+      text-align: right;
+      font-size: 18px;
+    }
   }
+
 }
 .timeline {
   margin: 20px auto;
@@ -143,10 +156,12 @@ footer p {
   height: 800px;
 
   .about-message {
-    padding-top: 100px;
-    padding-right: 50px;
+    display: inline-block;
+    padding: 10px 30px;
     text-align: right;
-    margin: 0 auto;
+    margin: 100px 50px 0 auto;
+    background: rgba(50, 50, 50, .4);
+    float: right;
   }
 }
 

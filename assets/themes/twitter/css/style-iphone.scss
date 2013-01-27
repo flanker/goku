@@ -94,6 +94,16 @@ name : style-iphone.scss
     background: url({{ site.static_url }}/images/site/fengzhichao-jumping-iphone.jpg) no-repeat center;
     height: 480px;
     background-size: 320px 480px;
+
+    .start-inner {
+      width: 100%;
+      margin-top: 250px;
+
+      .welcome-message {
+        padding: 0 10px;
+        color: #ece9d7;
+      }
+    }
   }
   .timeline {
     margin: 10px auto;
@@ -102,6 +112,14 @@ name : style-iphone.scss
     background: url({{ site.static_url }}/images/site/my-macbook-iphone.jpg) no-repeat center;
     height: 480px;
     background-size: 320px 480px;
+
+    .about-inner {
+      padding: 0;
+
+      .about-message {
+        margin: 100px 0 0 0;
+      }
+    }
   }
 
   .blog-container {
