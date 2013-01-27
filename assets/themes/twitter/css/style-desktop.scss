@@ -1,0 +1,57 @@
+---
+name : style-iphone.scss
+---
+
+@media (min-width: 569px) {
+
+  .navbar-top .navbar-inner .navbar-container {
+
+    .fancy-link {
+      margin: 20px 5px;
+      padding: 0 10px;
+      line-height: 30px;
+      background: rgba(100, 100, 100, .2);
+      height: 30px;
+      overflow: hidden;
+      position: relative;
+      width: 140px;
+
+      .fancy-link-inner {
+        display: block;
+        position: absolute;
+        width: 140px;
+        text-align: center;
+        top: 0;
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        -ms-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+          top: -30px;
+        }
+
+        .fancy-link-item {
+          display: block;
+        }
+      }
+    }
+
+    .brand.fancy-link {
+      margin-left: 0;
+      width: 140px;
+      .fancy-link-inner {
+        width: 140px;
+      }
+    }
+
+    .nav .fancy-link {
+      width: 50px;
+      .fancy-link-inner {
+        width: 50px;
+      }
+    }
+  }
+
+}

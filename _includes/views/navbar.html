@@ -4,7 +4,12 @@
       <a href="{{ HOME_PATH }}">
         <img class="avatar" src="{{ HOME_PATH }}images/site/fengzhichao-avatar.jpg" />
       </a>
-      <a class="brand" href="{{ HOME_PATH }}">{{ site.title }}</a>
+      <a class="brand fancy-link" href="{{ HOME_PATH }}">
+        <span class="fancy-link-inner">
+          <span class="fancy-link-item">Feng Zhichao</span>
+          <span class="fancy-link-item fancy-link-item-hidden">冯智超</span>
+        </span>
+      </a>
       <ul class="nav">
         {% assign pages_list = site.pages %}
         {% assign group = 'navigation' %}
