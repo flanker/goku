@@ -1,4 +1,4 @@
-require 'sass'
+require 'compass'
 
 module Jekyll
 
