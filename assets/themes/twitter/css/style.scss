@@ -55,6 +55,10 @@ footer p {
     margin: 5px 20px;
     -webkit-border-radius: 30px;
     border-radius: 30px;
+
+    &:hover {
+      box-shadow: 0px 0px 20px 1px #e36b23;
+    }
   }
   .brand {
     font-size: 22px;
