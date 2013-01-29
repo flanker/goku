@@ -9,9 +9,14 @@ footer,
 .about {
   // display: none;
 }
+.timeline {
+  overflow: hidden;
+  margin-bottom: 0;
+}
 .timeline-inner {
   position: relative;
   height: 350px;
+  margin-top: 100px;
 }
 .timeline-tag {
   height: 400px;
