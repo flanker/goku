@@ -1,0 +1,78 @@
+---
+name : style-folding-fan.scss
+---
+
+.nav,
+.navbar,
+footer,
+.start,
+.about {
+  // display: none;
+}
+.timeline-inner {
+  position: relative;
+  height: 400px;
+}
+.timeline-tag {
+  height: 400px;
+  width: 300px;
+  position: absolute;
+  left: 50%;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 30px;
+
+  h2 {
+    margin-bottom: 30px;
+  }
+}
+.about {
+  position: relative;
+  z-index: 999;
+}
+
+@mixin folding-fan($index) {
+  transform: rotate(#{10 * $index}deg);
+  -moz-transform:rotate(#{10 * $index}deg);
+  -webkit-transform:rotate(#{10 * $index}deg);
+  margin-left: #{-200 + 100 * $index}px;
+  top: #{40 + 30 * abs($index)}px;
+  z-index: 100 - abs($index);
+}
+
+.timeline-tag0 {
+  @include folding-fan(0);
+  background-color: #3bc1ed;
+  top: 50px;
+}
+.timeline-tag1 {
+  @include folding-fan(1);
+  background-color: #ed673b;
+}
+.timeline-tag2 {
+  @include folding-fan(2);
+  background-color: #3bed67;
+}
+.timeline-tag3 {
+  @include folding-fan(3);
+  background-color: #ed3b68;
+}
+.timeline-tag4 {
+  @include folding-fan(4);
+  background-color: #ed3bc1;
+}
+.timeline-tag5 {
+  @include folding-fan(-1);
+  background-color: #c1ed3b;
+}
+.timeline-tag6 {
+  @include folding-fan(-2);
+  background-color: #3b68ed;
+}
+.timeline-tag7 {
+  @include folding-fan(-3);
+  background-color: #edc03b;
+}
+.timeline-tag8 {
+
+}
