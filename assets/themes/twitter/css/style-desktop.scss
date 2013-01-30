@@ -57,6 +57,7 @@ name : style-iphone.scss
   .home {
 
     .about {
+      box-shadow: 1px 1px 40px 3px black;
       position: relative;
       z-index: 9999;
     }
