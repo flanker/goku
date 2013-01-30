@@ -15,12 +15,29 @@ $(function () {
     7: {degree: '-10deg', z: 950}
   };
 
-  $('.folding-fan .timeline-tag').each(function () {
-    var index = $(this).data('index');
-    var degree = indexDegreeMap[index].degree;
+  var targetTop = $(".timeline-inner").offset().top;
+  var init = true;
 
-    $(this).css('z-index', indexDegreeMap[index].z);
-    this.style.webkitTransform = "rotate(" + degree + ")";
+  $(window).scroll(function(){
+
+    var windowHeight = $(window).height();
+    var scrollYpos = $(document).scrollTop();
+
+    if (init && scrollYpos + windowHeight > targetTop ) {
+      init = false;
+
+      $('.folding-fan .timeline-tag').each(function () {
+        var $this = $(this);
+        var index = $this.data('index');
+        var degree = indexDegreeMap[index].degree;
+
+        $this.css({
+          '-webkit-transform': 'rotate(' + degree + ')',
+          '-moz-transform': 'rotate(' + degree + ')',
+          'z-index': indexDegreeMap[index].z
+        });
+      });
+    }
   });
 
   $('.folding-fan .timeline-tag').click(function () {
@@ -30,13 +47,17 @@ $(function () {
     var selected = $(this).data('index');
 
     $('.folding-fan .timeline-tag').each(function () {
-      var index = $(this).data('index');
+      var $this = $(this);
+      var index = $this.data('index');
       var newIndex = (index - selected + 8) % 8;
       var degree = indexDegreeMap[newIndex].degree;
 
-      $(this).css('z-index', indexDegreeMap[newIndex].z);
-      $(this).data('index', newIndex);
-      this.style.webkitTransform = "rotate(" + degree + ")";
+      $this.data('index', newIndex);
+      $this.css({
+        '-webkit-transform': 'rotate(' + degree + ')',
+        '-moz-transform': 'rotate(' + degree + ')',
+        'z-index': indexDegreeMap[newIndex].z
+      });
     });
   });
 

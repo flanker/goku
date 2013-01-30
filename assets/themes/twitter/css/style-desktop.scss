@@ -81,11 +81,11 @@ name : style-iphone.scss
       margin-left: -200px;
       top: 0;
 
-      -webkit-transform-origin-y: 250%;
-      -moz-transform-origin-y: 250%;
-      -o-transform-origin-y: 250%;
-      -ms-transform-origin-y: 250%;
-      transform-origin-y: 250%;
+      -webkit-transform-origin: 50% 250%;
+      -moz-transform-origin: 50% 250%;
+      -o-transform-origin: 50% 250%;
+      -ms-transform-origin: 50% 250%;
+      transform-origin: 50% 250%;
 
       -webkit-transition: all 2s ease-in-out;
       -moz-transition: all 2s ease-in-out;
