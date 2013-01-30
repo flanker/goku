@@ -9,6 +9,10 @@ footer,
 .about {
   // display: none;
 }
+.about {
+  position: relative;
+  z-index: 9999;
+}
 .timeline {
   overflow: hidden;
   margin-bottom: 0;
@@ -27,62 +31,51 @@ footer,
   box-sizing: border-box;
   padding: 30px;
   box-shadow: 0 0 50px 1px black;
+  margin-left: -200px;
+  top: 0;
+
+  -webkit-transform-origin-y: 250%;
+  -moz-transform-origin-y: 250%;
+  -o-transform-origin-y: 250%;
+  -ms-transform-origin-y: 250%;
+  transform-origin-y: 250%;
+
+  -webkit-transition: all 2s ease-in-out;
+  -moz-transition: all 2s ease-in-out;
+  -o-transition: all 2s ease-in-out;
+  -ms-transition: all 2s ease-in-out;
+  transition: all 2s ease-in-out;
+
+  -webkit-transform:rotate(-90deg);
+  -moz-transform:rotate(-90deg);
+  transform: rotate(-90deg);
 
   h2 {
     margin-bottom: 30px;
   }
 }
-.about {
-  position: relative;
-  z-index: 9999;
-}
-
-@mixin folding-fan($alpha) {
-  $x: 800 * sin($alpha);
-  $y: 800 * cos($alpha);
-
-  transform: rotate(#{$alpha});
-  -moz-transform:rotate(#{$alpha});
-  -webkit-transform:rotate(#{$alpha});
-
-  margin-left: #{-200 + $x}px;
-  top: #{800 - $y}px;
-  z-index: floor($y);
-}
 
 .timeline-tag0 {
-  @include folding-fan(0deg);
   background-color: #3bc1ed;
 }
 .timeline-tag1 {
-  @include folding-fan(10deg);
   background-color: #ed673b;
 }
 .timeline-tag2 {
-  @include folding-fan(20deg);
   background-color: #3bed67;
 }
 .timeline-tag3 {
-  @include folding-fan(30deg);
   background-color: #ed3b68;
 }
 .timeline-tag4 {
-  @include folding-fan(40deg);
   background-color: #ed3bc1;
 }
 .timeline-tag5 {
-  @include folding-fan(350deg);
   background-color: #c1ed3b;
 }
 .timeline-tag6 {
-  @include folding-fan(340deg);
   background-color: #3b68ed;
 }
 .timeline-tag7 {
-  @include folding-fan(330deg);
-  background-color: #edc03b;
-}
-.timeline-tag8 {
-  @include folding-fan(320deg);
   background-color: #edc03b;
 }
