@@ -1,5 +1,9 @@
 $(function () {
 
+  if ($(window).width() < 569) {
+    return;
+  }
+
   var indexDegreeMap = {
     0: {degree: '0deg', z: 1000},
     1: {degree: '10deg', z: 950},
@@ -20,6 +24,9 @@ $(function () {
   });
 
   $('.folding-fan .timeline-tag').click(function () {
+    if ($(window).width() < 569) {
+      return;
+    }
     var selected = $(this).data('index');
 
     $('.folding-fan .timeline-tag').each(function () {

@@ -54,4 +54,81 @@ name : style-iphone.scss
     }
   }
 
+  .home {
+
+    .about {
+      position: relative;
+      z-index: 9999;
+    }
+    .timeline {
+      overflow: hidden;
+      margin-bottom: 0;
+    }
+    .timeline-inner {
+      position: relative;
+      height: 350px;
+      margin-top: 100px;
+    }
+    .timeline-tag {
+      height: 400px;
+      width: 300px;
+      position: absolute;
+      left: 50%;
+      text-align: center;
+      box-sizing: border-box;
+      padding: 30px;
+      box-shadow: 0 0 50px 1px black;
+      margin-left: -200px;
+      top: 0;
+
+      -webkit-transform-origin-y: 250%;
+      -moz-transform-origin-y: 250%;
+      -o-transform-origin-y: 250%;
+      -ms-transform-origin-y: 250%;
+      transform-origin-y: 250%;
+
+      -webkit-transition: all 2s ease-in-out;
+      -moz-transition: all 2s ease-in-out;
+      -o-transition: all 2s ease-in-out;
+      -ms-transition: all 2s ease-in-out;
+      transition: all 2s ease-in-out;
+
+      -webkit-transform:rotate(-90deg);
+      -moz-transform:rotate(-90deg);
+      transform: rotate(-90deg);
+
+      h2 {
+        margin-bottom: 30px;
+      }
+      span {
+        text-shadow: 1px 1px 1px black;
+      }
+    }
+
+    .timeline-tag0 {
+      background-color: #3bc1ed;
+    }
+    .timeline-tag1 {
+      background-color: #ed673b;
+    }
+    .timeline-tag2 {
+      background-color: #3bed67;
+    }
+    .timeline-tag3 {
+      background-color: #ed3b68;
+    }
+    .timeline-tag4 {
+      background-color: #ed3bc1;
+    }
+    .timeline-tag5 {
+      background-color: #c1ed3b;
+    }
+    .timeline-tag6 {
+      background-color: #3b68ed;
+    }
+    .timeline-tag7 {
+      background-color: #edc03b;
+    }
+  }
+
 }
