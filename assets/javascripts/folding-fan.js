@@ -1,8 +1,10 @@
+var isWindowTooSmall = function () {
+    return $(window).width() < 569;
+  };
+
 $(function () {
 
-  if ($(window).width() < 569) {
-    return;
-  }
+  if (isWindowTooSmall()) return;
 
   var indexDegreeMap = {
     0: {degree: '0deg', z: 1000},
@@ -15,35 +17,42 @@ $(function () {
     7: {degree: '-10deg', z: 950}
   };
 
-  var targetTop = $(".timeline-inner").offset().top;
-  var init = true;
+  var targetTop = $(".timeline-inner").offset().top + 10;
+  var toInit = true;
+
+  var initFoldingFan = function () {
+    toInit = false;
+
+    $('.folding-fan .timeline-tag').each(function () {
+      var $this = $(this);
+      var index = $this.data('index');
+      var degree = indexDegreeMap[index].degree;
+
+      $this.css({
+        '-webkit-transform': 'rotate(' + degree + ')',
+        '-moz-transform': 'rotate(' + degree + ')',
+        'z-index': indexDegreeMap[index].z
+      });
+    });
+  };
+
+  if ($(window).height() > targetTop) {
+    initFoldingFan();
+  }
 
   $(window).scroll(function(){
+    if (isWindowTooSmall()) return;
 
-    var windowHeight = $(window).height();
     var scrollYpos = $(document).scrollTop();
 
-    if (init && scrollYpos + windowHeight > targetTop ) {
-      init = false;
-
-      $('.folding-fan .timeline-tag').each(function () {
-        var $this = $(this);
-        var index = $this.data('index');
-        var degree = indexDegreeMap[index].degree;
-
-        $this.css({
-          '-webkit-transform': 'rotate(' + degree + ')',
-          '-moz-transform': 'rotate(' + degree + ')',
-          'z-index': indexDegreeMap[index].z
-        });
-      });
+    if (toInit && scrollYpos + $(window).height() > targetTop ) {
+      initFoldingFan();
     }
   });
 
   $('.folding-fan .timeline-tag').click(function () {
-    if ($(window).width() < 569) {
-      return;
-    }
+    if (isWindowTooSmall()) return;
+
     var selected = $(this).data('index');
 
     $('.folding-fan .timeline-tag').each(function () {
