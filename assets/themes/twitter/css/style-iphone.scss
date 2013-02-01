@@ -155,13 +155,18 @@ name : style-iphone.scss
     }
   }
 
-  .thumbnails {
+  .photo {
     margin: 10px 0;
 
     .item {
       float: none;
       width: auto;
       margin-left: 0;
+
+      .thumbnail img {
+        width: auto;
+        height: auto;
+      }
       a {
         display: block;
         text-align: center;
