@@ -4,6 +4,8 @@ var isWindowTooSmall = function () {
 
 $(function () {
 
+  if ($('.home').length === 0) return;
+
   if (isWindowTooSmall()) return;
 
   var indexDegreeMap = {
