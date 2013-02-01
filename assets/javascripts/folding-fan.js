@@ -33,6 +33,7 @@ $(function () {
       $this.css({
         '-webkit-transform': 'rotate(' + degree + ')',
         '-moz-transform': 'rotate(' + degree + ')',
+        'ms-transform': 'rotate(' + degree + ')',
         'z-index': indexDegreeMap[index].z
       });
     });
@@ -67,6 +68,7 @@ $(function () {
       $this.css({
         '-webkit-transform': 'rotate(' + degree + ')',
         '-moz-transform': 'rotate(' + degree + ')',
+        'ms-transform': 'rotate(' + degree + ')',
         'z-index': indexDegreeMap[newIndex].z
       });
     });
