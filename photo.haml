@@ -1,0 +1,62 @@
+---
+layout: page
+title: photo
+tagline: 照片
+header: Pages
+group: navigation
+---
+{% include JB/setup %}
+
+%ul.photo.thumbnails
+  {% instagram accesstokenpath:instagram %}
+  %li.item
+    .thumbnail
+      %a{:alt => "{{ item.caption.text }}", :href => "{{ item.link }}"}
+        %img{"data-image" => "{{ item.images.standard_resolution.url }}", :src => "{{ item.images.low_resolution.url }}", :title => "{{ item.caption.text }}"}/
+      {% if item.caption.text %}
+      %p> {{ item.caption.text }}
+      {% endif %}
+      %p {{ item.readable_created_time }}
+      {% if item.location.name %}
+      %p> @{{ item.location.name }}
+      {% endif %}
+      {% if item.likes.count != 0 %}
+      %p> {{ item.likes.count }} likes
+      {% endif %}
+      {% if item.comments.count != 0 %}
+      %p> {{ item.comments.count }} comments
+      {% endif %}
+  {% endinstagram %}
+#modalBox.modal{:style => "display: none"}
+  .modal-header
+    %button.close{"data-dismiss" => "modal"} ×
+    %h4.modal-title Modal header
+  .modal-body
+    %img#modalImage{:src => "", :title => ""}/
+
+%script{:src => "/assets/javascripts/jquery.masonry.min.js", :type => "text/javascript"}
+:javascript
+  $(function () {
+    if (screen.width <= 320) {
+      return;
+    }
+
+    var $container = $('.photo');
+    $container.masonry({
+      itemSelector : '.item'
+    });
+
+    var popModal = function(title, image) {
+      $('#modalBox .modal-title').text(title);
+      $('#modalImage').attr({'src': image, 'title': title });
+      $('#modalBox').modal();
+    };
+
+    $('.item a').click(function (e) {
+      e.preventDefault();
+      $(this).tooltip('hide');
+
+      popModal($(this).attr('alt') || 'untitled',
+        $('img', this).attr('data-image'))
+    });
+  });

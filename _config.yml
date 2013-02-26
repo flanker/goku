@@ -17,7 +17,7 @@ auto: true
 pygments: true
 markdown: rdiscount
 paginate: 5
-paginate_files: ['blog.html']
+paginate_files: ['blog.html','video.html']
 
 # Themes are encouraged to use these universal variables
 # so be sure to set them if your theme uses them.
@@ -39,9 +39,12 @@ author :
 # Else if you are pushing to username.github.com, replace with your username.
 # Finally if you are pushing to a GitHub project page, include the project name at the end.
 #
-production_url : http://blog.chaojiwudi.com
+# production_url : http://blog.chaojiwudi.com
 
-static_url: http://static.fengzhichao.me
+# static_url: http://static.fengzhichao.me
+
+production_url:
+static_url:
 
 # All Jekyll-Bootstrap specific configurations are namespaced into this hash
 #
