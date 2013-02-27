@@ -1,4 +1,4 @@
-source 'https://rubygems.org'
+source :rubygems
 
 gem 'jekyll'
 gem 'rdiscount'
@@ -10,6 +10,7 @@ gem 'compass'
 gem 'haml'
 
 group :development do
-	gem 'rake'
-	gem 'heroku'
+  gem 'rake'
+  gem 'heroku'
+  gem 'ruby-debug19'
 end

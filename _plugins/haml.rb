@@ -18,7 +18,6 @@ module Jekyll
     def convert(content)
       begin
         puts "Performing Haml Conversion."
-        p content
         engine = Haml::Engine.new(content)
         engine.render
       rescue StandardError => e

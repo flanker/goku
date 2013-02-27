@@ -11,7 +11,7 @@ module Jekyll
     # Returns nothing.
     def generate(site)
       site.pages.dup.each do |page|
-	    path = page.full_path.gsub(/^\//, '')
+        path = page.full_path.gsub(/^\//, '')
         paginate(site, page) if Pager.pagination_enabled?(site.config, path)
       end
     end
