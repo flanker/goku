@@ -1,0 +1,54 @@
+---
+name : style-menu.scss
+---
+
+@media (min-width: 569px) {
+
+  .archives {
+    position: relative;
+    height: 500px;
+  }
+
+  .current-links {
+    position: absolute;
+    left: 150px;
+    font-size: 18px;
+
+    .blog-link {
+      padding: 5px 0;
+    }
+  }
+
+  .archive-year {
+    .year a {
+      padding-right: 10px;
+      border-right: 5px solid;
+    }
+    .archive-months {
+      display: none;
+      right: 50px;
+      bottom: 50px;
+      position: absolute;
+    }
+    .archive-month {
+      display: inline-block;
+      .month {
+        display: inline-block;
+        width: 100px;
+        text-align: center;
+        font-size: 16px;
+        border-top: 2px solid;
+      }
+      .blog-links {
+        display: none
+      }
+    }
+  }
+
+  // .archive-year:first-child {
+  //   .archive-months {
+  //     display: block;
+  //   }
+  // }
+
+}
