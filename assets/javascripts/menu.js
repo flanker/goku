@@ -43,10 +43,11 @@ Menu.views.MenuView = Backbone.View.extend({
 
     setTimeout(function() {
       $('.current-links .blog-date').css('left', '-400px');
-      $('.current-links a').css('left', '-600px');
-
-      setTimeout(showLinks, 1800);
     }, 200);
+    setTimeout(function() {
+      $('.current-links a').css('left', '-600px');
+    }, 400);
+    setTimeout(showLinks, 1800);
   }
 
 });
