@@ -12,6 +12,7 @@ name : style-menu.scss
   .current-links {
     position: absolute;
     left: 150px;
+    top: 0;
     font-size: 18px;
 
     .blog-link {
@@ -33,7 +34,8 @@ name : style-menu.scss
       position: absolute;
     }
     .archive-month {
-      display: inline-block;
+      display: block;
+      float: right;
       .month {
         display: inline-block;
         width: 100px;
@@ -74,29 +76,48 @@ name : style-menu.scss
     transition: all 0.3s ease-in-out;
   }
 
-  .year-2013.selected~.year-bar {
-    top: 0px;
+  .archive-year:nth-child(1).selected~.year-bar { top: 0px; }
+  .archive-year:nth-child(1):hover~.year-bar { top: 0px !important; }
+  .archive-year:nth-child(2).selected~.year-bar { top: 50px; }
+  .archive-year:nth-child(2):hover~.year-bar {top: 50px !important; }
+  .archive-year:nth-child(3).selected~.year-bar { top: 100px; }
+  .archive-year:nth-child(3):hover~.year-bar { top: 100px !important; }
+  .archive-year:nth-child(4).selected~.year-bar { top: 150px; }
+  .archive-year:nth-child(4):hover~.year-bar { top: 150px !important; }
+
+  .month-bar {
+    width: 100px;
+    height: 5px;
+    background: #e36b23;
+    position: absolute;
+    bottom: 0px;
+    right: 0;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
   }
-  .year-2013:hover~.year-bar {
-    top: 0px !important;
-  }
-  .year-2012.selected~.year-bar {
-    top: 50px;
-  }
-  .year-2012:hover~.year-bar {
-    top: 50px !important;
-  }
-  .year-2011.selected~.year-bar {
-    top: 100px;
-  }
-  .year-2011:hover~.year-bar {
-    top: 100px !important;
-  }
-  .year-2010.selected~.year-bar {
-    top: 150px;
-  }
-  .year-2010:hover~.year-bar {
-    top: 150px !important;
-  }
+
+  .archive-month:nth-child(1).selected~.month-bar { right: 0px; }
+  .archive-month:nth-child(1):hover~.month-bar { right: 0px !important; }
+  .archive-month:nth-child(2).selected~.month-bar { right: 100px; }
+  .archive-month:nth-child(2):hover~.month-bar {right: 100px !important; }
+  .archive-month:nth-child(3).selected~.month-bar { right: 200px; }
+  .archive-month:nth-child(3):hover~.month-bar { right: 200px !important; }
+  .archive-month:nth-child(4).selected~.month-bar { right: 300px; }
+  .archive-month:nth-child(4):hover~.month-bar { right: 300px !important; }
+  .archive-month:nth-child(5).selected~.month-bar { right: 400px; }
+  .archive-month:nth-child(5):hover~.month-bar { right: 400px !important; }
+  .archive-month:nth-child(6).selected~.month-bar { right: 500px; }
+  .archive-month:nth-child(6):hover~.month-bar { right: 500px !important; }
+  .archive-month:nth-child(7).selected~.month-bar { right: 600px; }
+  .archive-month:nth-child(7):hover~.month-bar { right: 600px !important; }
+  .archive-month:nth-child(8).selected~.month-bar { right: 700px; }
+  .archive-month:nth-child(8):hover~.month-bar { right: 700px !important; }
+  .archive-month:nth-child(9).selected~.month-bar { right: 800px; }
+  .archive-month:nth-child(9):hover~.month-bar { right: 800px !important; }
+  .archive-month:nth-child(10).selected~.month-bar { right: 900px; }
+  .archive-month:nth-child(10):hover~.month-bar { right: 900px !important; }
 
 }

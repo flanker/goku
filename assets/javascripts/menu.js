@@ -18,7 +18,7 @@ Menu.views.MenuView = Backbone.View.extend({
   },
 
   selecteCurrent: function () {
-    $('.archive-year, archive-month').removeClass('selected');
+    $('.archive-year, .archive-month').removeClass('selected');
     $(this.yearSelector).addClass('selected');
     $(this.yearSelector + this.monthSelector).addClass('selected');
   },

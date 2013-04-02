@@ -8,7 +8,6 @@ group: navigation
 {% include JB/setup %}
 
 .archives
-  .current-links
 {% assign posts_collate = site.posts %}
 
 {% for post in posts_collate %}
@@ -32,9 +31,11 @@ group: navigation
             %span
               {{ post.date | date: "%B %e, %Y" }} &raquo;
               %a{:href => "{{ BASE_PATH }}{{ post.url }}"} {{ post.title }}
-
   {% if next_year != "" %}
     {% if this_year != next_year %}
+
+      .month-bar
+
   .archive-year{:class => "year-{{next_year}}"}
     %h2.year
       %a{:href => '#!/{{next_year}}'} {{next_year}}
@@ -55,8 +56,10 @@ group: navigation
 {% endfor %}
 
 {% assign posts_collate = nil %}
-
+      .month-bar
   .year-bar
+
+  .current-links
 
 %script{:type => "text/javascript"}
   MenuData = {% blogs_json %};
