@@ -22,6 +22,31 @@ name : style-menu.scss
 
     .blog-link {
       padding: 5px 0;
+      list-style: none;
+      position: relative;
+      height: 20px;
+      width: 800px;
+
+      .blog-date {
+        position: absolute;
+        left: 0;
+        line-height: 20px;
+        -webkit-transition: all 1s ease-in-out;
+        -moz-transition: all 1s ease-in-out;
+        -o-transition: all 1s ease-in-out;
+        -ms-transition: all 1s ease-in-out;
+        transition: all 1s ease-in-out;
+      }
+      a {
+        position: absolute;
+        left: 200px;
+        line-height: 20px;
+        -webkit-transition: all 2s ease-in-out;
+        -moz-transition: all 2s ease-in-out;
+        -o-transition: all 2s ease-in-out;
+        -ms-transition: all 2s ease-in-out;
+        transition: all 2s ease-in-out;
+      }
     }
   }
 

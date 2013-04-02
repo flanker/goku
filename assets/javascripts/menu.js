@@ -30,10 +30,23 @@ Menu.views.MenuView = Backbone.View.extend({
 
   showBlogLinks: function () {
     var self = this;
-    $('.current-links').fadeOut(500, function () {
+
+    var showLinks = function () {
       var toShow = self.yearSelector + self.monthSelector + ' .blog-links ';
-      $('.current-links').html($(toShow).clone()).fadeIn(500);
-    });
+      $('.current-links').hide().html($(toShow).clone()).fadeIn(1000);
+    };
+
+    if ($('.current-links').is(':empty')) {
+      showLinks();
+      return;
+    }
+
+    setTimeout(function() {
+      $('.current-links .blog-date').css('left', '-400px');
+      $('.current-links a').css('left', '-600px');
+
+      setTimeout(showLinks, 1800);
+    }, 200);
   }
 
 });
