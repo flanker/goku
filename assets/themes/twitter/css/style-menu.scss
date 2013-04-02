@@ -77,17 +77,26 @@ name : style-menu.scss
   .year-2013.selected~.year-bar {
     top: 0px;
   }
-
+  .year-2013:hover~.year-bar {
+    top: 0px !important;
+  }
   .year-2012.selected~.year-bar {
     top: 50px;
   }
-
+  .year-2012:hover~.year-bar {
+    top: 50px !important;
+  }
   .year-2011.selected~.year-bar {
     top: 100px;
   }
-
+  .year-2011:hover~.year-bar {
+    top: 100px !important;
+  }
   .year-2010.selected~.year-bar {
     top: 150px;
+  }
+  .year-2010:hover~.year-bar {
+    top: 150px !important;
   }
 
 }
