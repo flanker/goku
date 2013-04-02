@@ -20,9 +20,11 @@ name : style-menu.scss
   }
 
   .archive-year {
+    padding-left: 20px;
+
     .year a {
       padding-right: 10px;
-      border-right: 5px solid;
+      text-decoration: none;
     }
     .archive-months {
       display: none;
@@ -37,7 +39,20 @@ name : style-menu.scss
         width: 100px;
         text-align: center;
         font-size: 16px;
-        border-top: 2px solid;
+        padding-top: 5px;
+
+        a {
+          text-decoration: none;
+        }
+
+        &.selected {
+          border-top: 2px solid;
+          -webkit-transition: all 0.3s ease-in-out;
+          -moz-transition: all 0.3s ease-in-out;
+          -o-transition: all 0.3s ease-in-out;
+          -ms-transition: all 0.3s ease-in-out;
+          transition: all 0.3s ease-in-out;
+        }
       }
       .blog-links {
         display: none
@@ -45,10 +60,34 @@ name : style-menu.scss
     }
   }
 
-  // .archive-year:first-child {
-  //   .archive-months {
-  //     display: block;
-  //   }
-  // }
+  .year-bar {
+    width: 8px;
+    height: 40px;
+    background: #e36b23;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .year-2013.selected~.year-bar {
+    top: 0px;
+  }
+
+  .year-2012.selected~.year-bar {
+    top: 50px;
+  }
+
+  .year-2011.selected~.year-bar {
+    top: 100px;
+  }
+
+  .year-2010.selected~.year-bar {
+    top: 150px;
+  }
 
 }

@@ -6,18 +6,32 @@ Menu = {
 Menu.views.MenuView = Backbone.View.extend({
 
   initialize: function () {
-    this.year = this.options.year;
-    this.month = this.options.month;
+    this.yearSelector = ' .year-' + this.options.year + ' ';
+    this.monthSelector = ' .' + this.options.month + ' ';
     this.render();
   },
 
   render: function () {
-    $('.archive-months').hide();
-    $('.archive-year.' + this.year + ' .archive-months').show();
+    this.selecteCurrent();
+    this.showMonths();
+    this.showBlogLinks();
+  },
 
+  selecteCurrent: function () {
+    $('.archive-year, archive-month').removeClass('selected');
+    $(this.yearSelector).addClass('selected');
+    $(this.yearSelector + this.monthSelector).addClass('selected');
+  },
+
+  showMonths: function () {
+    $('.archive-months').hide();
+    $(this.yearSelector + ' .archive-months').show();
+  },
+
+  showBlogLinks: function () {
     var self = this;
     $('.current-links').fadeOut(500, function () {
-      var toShow = '.' + self.year + ' .' + self.month + ' .blog-links';
+      var toShow = self.yearSelector + self.monthSelector + ' .blog-links ';
       $('.current-links').html($(toShow).clone()).fadeIn(500);
     });
   }
