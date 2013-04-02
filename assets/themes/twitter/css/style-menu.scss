@@ -4,15 +4,20 @@ name : style-menu.scss
 
 @media (min-width: 569px) {
 
+  .blog-container {
+    width: 1024px;
+  }
+
   .archives {
     position: relative;
     height: 500px;
+    overflow: hidden;
   }
 
   .current-links {
     position: absolute;
     left: 150px;
-    top: 0;
+    top: 10px;
     font-size: 18px;
 
     .blog-link {
@@ -23,9 +28,13 @@ name : style-menu.scss
   .archive-year {
     padding-left: 20px;
 
-    .year a {
-      padding-right: 10px;
-      text-decoration: none;
+    .year {
+      margin: 0;
+      padding: 10px 0;
+      a {
+        padding-right: 10px;
+        text-decoration: none;
+      }
     }
     .archive-months {
       display: none;
@@ -36,6 +45,7 @@ name : style-menu.scss
     .archive-month {
       display: block;
       float: right;
+
       .month {
         display: inline-block;
         width: 100px;
@@ -76,14 +86,14 @@ name : style-menu.scss
     transition: all 0.3s ease-in-out;
   }
 
-  .archive-year:nth-child(1).selected~.year-bar { top: 0px; }
-  .archive-year:nth-child(1):hover~.year-bar { top: 0px !important; }
-  .archive-year:nth-child(2).selected~.year-bar { top: 50px; }
-  .archive-year:nth-child(2):hover~.year-bar {top: 50px !important; }
-  .archive-year:nth-child(3).selected~.year-bar { top: 100px; }
-  .archive-year:nth-child(3):hover~.year-bar { top: 100px !important; }
-  .archive-year:nth-child(4).selected~.year-bar { top: 150px; }
-  .archive-year:nth-child(4):hover~.year-bar { top: 150px !important; }
+  .archive-year:nth-child(1).selected~.year-bar { top: 10px; }
+  .archive-year:nth-child(1):hover~.year-bar { top: 10px !important; }
+  .archive-year:nth-child(2).selected~.year-bar { top: 70px; }
+  .archive-year:nth-child(2):hover~.year-bar {top: 70px !important; }
+  .archive-year:nth-child(3).selected~.year-bar { top: 130px; }
+  .archive-year:nth-child(3):hover~.year-bar { top: 130px !important; }
+  .archive-year:nth-child(4).selected~.year-bar { top: 190px; }
+  .archive-year:nth-child(4):hover~.year-bar { top: 190px !important; }
 
   .month-bar {
     width: 100px;
