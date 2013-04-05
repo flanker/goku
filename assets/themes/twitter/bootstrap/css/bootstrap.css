@@ -150,7 +150,7 @@ textarea {
 }
 body {
   margin: 0;
-  font-family: "Helvetica Neue", Helvetica, Arial, "Microsoft YaHei", sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
   font-size: 15px;
   line-height: 20px;
   color: #ece9d7;
@@ -544,7 +544,7 @@ h4,
 h5,
 h6 {
   margin: 10px 0;
-  font-family: 'Oswald', "Helvetica Neue", Helvetica, Arial, "Microsoft YaHei", sans-serif;
+  font-family: 'Oswald', "Helvetica Neue", Helvetica, Arial, "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
   font-weight: bold;
   line-height: 20px;
   color: #e36b23;
@@ -722,7 +722,7 @@ address {
 code,
 pre {
   padding: 0 3px 2px;
-  font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+  font-family: Menlo, Monaco, Consolas, "Courier New", "Hiragino Sans GB", monospace;
   font-size: 13px;
   color: #333333;
   -webkit-border-radius: 3px;
@@ -801,7 +801,7 @@ input,
 button,
 select,
 textarea {
-  font-family: Georgia, Utopia, Palatino, 'Palatino Linotype', serif;
+  font-family: Georgia, Utopia, Palatino, 'Palatino Linotype', "Hiragino Sans GB", serif;
 }
 label {
   display: block;
@@ -3627,7 +3627,7 @@ input[type="submit"].btn.btn-mini {
 .navbar-search .search-query {
   margin-bottom: 0;
   padding: 4px 14px;
-  font-family: "Helvetica Neue", Helvetica, Arial, "Microsoft YaHei", sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
   font-size: 13px;
   font-weight: normal;
   line-height: 1;
@@ -5000,7 +5000,7 @@ h4 small,
 h5 small,
 h6 small,
 h6 {
-  font-family: 'Oswald', "Helvetica Neue", Helvetica, Arial, "Microsoft YaHei", sans-serif;
+  font-family: 'Oswald', "Helvetica Neue", Helvetica, Arial, "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
   color: #e36b23;
   text-shadow: -1px 1px 0 #612c0c;
 }
@@ -5034,14 +5034,14 @@ blockquote.pull-right {
 }
 .navbar .brand {
   padding: 25px 20px 15px;
-  font-family: 'Oswald', "Helvetica Neue", Helvetica, Arial, "Microsoft YaHei", sans-serif;
+  font-family: 'Oswald', "Helvetica Neue", Helvetica, Arial, "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
   font-size: 30px;
   text-shadow: -1px 1px 0 #612c0c;
 }
 .navbar .nav > li > a {
   padding: 23px 20px 13px;
   line-height: 30px;
-  font-family: 'Oswald', "Helvetica Neue", Helvetica, Arial, "Microsoft YaHei", sans-serif;
+  font-family: 'Oswald', "Helvetica Neue", Helvetica, Arial, "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
   font-size: 22px;
   text-shadow: -1px 1px 0 #612c0c;
 }
@@ -5063,7 +5063,7 @@ blockquote.pull-right {
 .navbar .navbar-text {
   padding: 23px 20px 13px;
   line-height: 30px;
-  font-family: 'Oswald', "Helvetica Neue", Helvetica, Arial, "Microsoft YaHei", sans-serif;
+  font-family: 'Oswald', "Helvetica Neue", Helvetica, Arial, "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
   font-size: 22px;
   text-shadow: -2px 2px 0 #555555;
 }
@@ -5071,7 +5071,7 @@ blockquote.pull-right {
   margin-top: 24px;
 }
 .navbar .navbar-search .search-query {
-  font-family: Georgia, Utopia, Palatino, 'Palatino Linotype', serif;
+  font-family: Georgia, Utopia, Palatino, 'Palatino Linotype', "Hiragino Sans GB", serif;
   font-size: 15px;
   line-height: 20px;
   -webkit-box-shadow: none;
@@ -5434,7 +5434,7 @@ div.subnav .nav > .active > a:hover .caret {
 }
 legend {
   border-bottom: none;
-  font-family: 'Oswald', "Helvetica Neue", Helvetica, Arial, "Microsoft YaHei", sans-serif;
+  font-family: 'Oswald', "Helvetica Neue", Helvetica, Arial, "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
   color: #e36b23;
   text-shadow: -2px 2px 0 #612c0c;
 }
