@@ -5,6 +5,9 @@ name : style.scss
 html {
   -webkit-font-smoothing: antialiased;
 }
+body {
+  background: url({{ site.static_url }}/images/site/paper_bg.png);
+}
 
 /* common */
 footer p {
