@@ -11,7 +11,8 @@ exclude: [
   "Procfile",
   "vendor",
   "Gemfile",
-  "Gemfile.lock"
+  "Gemfile.lock",
+  "excludes"
   ]
 auto: true
 pygments: true
