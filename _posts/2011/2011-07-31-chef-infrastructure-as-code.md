@@ -20,7 +20,7 @@ Chef 是一个开源系统配置和系统集成框架，可以通过代码来很
 
 Chef 管理基础设置大体有三个步骤：
 
-![chef steps](/images/2011/steps.png)
+![chef steps]({{ site.static_url }}/images/2011/steps.png)
 
 * Provisioning：这一步通过虚拟机或者云的接口来搭建虚拟机或者 EC2 机器，准备出来的是裸机。
 * Configuration：这一步通过 Chef 脚步来配置每一台机器，装软件，写配置等。

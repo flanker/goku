@@ -18,7 +18,7 @@ status: publish
 
 在线预览地址: [http://chaojiwudi.com/PacificWar/](http://chaojiwudi.com/PacificWar/ "Pacific War Timeline Map")
 
-![pacific war timeline map](/images/2010/pacific_war_timeline_map.png)
+![pacific war timeline map]({{ site.static_url }}/images/2010/pacific_war_timeline_map.png)
 
 在这里使用到了 [SIMILE Timeline](http://www.simile-widgets.org/timeline "SIMILE Timeline") 作为时间线, [Google Map](http://code.google.com/apis/maps/documentation/javascript "Google Map API") 作为地图, 使用 JSON 作为数据格式.
 

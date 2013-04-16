@@ -49,8 +49,8 @@ status: publish
 
 经过若干配置，terminal 和 vi 都变得非常华丽，也极大的方便了开发。
 
-![Terminal](/images/2011/terminal.png)
+![Terminal]({{ site.static_url }}/images/2011/terminal.png)
 
-![MacVim](/images/2011/MacVim.png)
+![MacVim]({{ site.static_url }}/images/2011/MacVim.png)
 
 这里还有一个更强大更华丽的 shell：[fish](http://fishshell.com/ "fish shell")，提供了很强大的用户交互功能，包括界面颜色和自动完成，我们可以使用 homebrew 很方便的安装他：brew install fish。再配合 [fish-nuggets](https://github.com/eventualbuddha/fish-nuggets "fish-nuggets") 就更加无敌了（比如解决了和 rvm 兼容的问题）

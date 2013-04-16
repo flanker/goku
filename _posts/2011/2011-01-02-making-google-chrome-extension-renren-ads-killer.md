@@ -66,11 +66,11 @@ name、version、description 是扩展的描述信息。permissions 声明了扩
 
 下面我们需要测试执行我们的扩展。将 manifest.json 和 script.js 两个文件放在同一目录，比如 /test，打开 chrome 谷歌浏览器，进入扩展页面（Tools -> Extentsions，或者 [chrome://extensions/](chrome://extensions/)），打开右侧的 Developer Mode，选择 Load unpacked extension... 找到我们的 /test 就可以加载我们的扩展了。对于扩展也可以像调试普通页面一样，使用 Chrome 谷歌浏览器的 Developer tools 来调试 javascript 啊等。测试通过后，可以继续在扩展页面 Developer Mode 下，使用 Pack extension 来将扩展打包成 .crx 格式（自己手动压缩成 zip包然后修改扩展名是不行的，crx还有别的信息）。还可以发布到 chrome web store 应用商店上，不过现在 web store 首次发布 app 需要交 $5.00 美元验证。
 
-![使用 人人网广告杀手 之前](/images/2011/before-renrenAdsKiller.png)
+![使用 人人网广告杀手 之前]({{ site.static_url }}/images/2011/before-renrenAdsKiller.png)
 
 Hooah，大功告成，打开人人网页面后，清爽了许多。
 
-![使用了 人人网广告杀手 之后](/images/2011/using-renrenAdsKiller.png)
+![使用了 人人网广告杀手 之后]({{ site.static_url }}/images/2011/using-renrenAdsKiller.png)
 
 我们的扩展还很简单，比如没有设置页面等等，这些功能在 Google Chrome 谷歌浏览器扩展中也都很好实现，以后可以进一步优化，更详细的可以参考 [Google Chrome 谷歌浏览器扩展开发文档](http://code.google.com/chrome/extensions/getstarted.html "chrome 扩展文档")。
 

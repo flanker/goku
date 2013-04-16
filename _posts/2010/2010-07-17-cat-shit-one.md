@@ -12,7 +12,7 @@ status: publish
 ---
 cat shit one 动画出来了~ 超级可爱小动物的现代战争动漫, 做的很专业, 人物造型,枪械,无线电通讯
 
-![cat shit one](/images/2010/cat_shit_one.jpg "cat shit one")
+![cat shit one]({{ site.static_url }}/images/2010/cat_shit_one.jpg "cat shit one")
 
 =========
 

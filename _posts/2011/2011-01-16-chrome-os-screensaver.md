@@ -16,7 +16,7 @@ status: publish
 ---
 Chrome OS 里的屏幕保护页面被提取了出来，比较帅，[可以在这里预览一下](http://chaojiwudi.com/download/chrome-os-screensaver/ "Chromium OS 屏幕保护页面")。（via [谷奥](http://www.guao.hk/posts/cr-48-chrome-os-screensaver-and-wallpaper.html "Chrome OS 屏保和登录界面 HTML 5 网页下载")）
 
-![Chrome OS 屏幕保护页面](/images/2011/chrome-os-screen-saver.jpg)
+![Chrome OS 屏幕保护页面]({{ site.static_url }}/images/2011/chrome-os-screen-saver.jpg)
 
 就是这玩意儿和我之前写的 [javascript 3D Tag Cloud 标签云](http://blog.chaojiwudi.com/2010/12/making-a-simple-javascript-3d-tag-cloud/ "制作一个简单的 Javascript 3D Tag Cloud 旋转标签云") 一样，非常吃 CPU 啊……
 

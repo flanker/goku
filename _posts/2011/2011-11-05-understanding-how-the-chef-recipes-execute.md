@@ -17,7 +17,7 @@ type: post
 status: publish
 ---
 
-![cookbook](/images/2011/cookbook.gif)
+![cookbook]({{ site.static_url }}/images/2011/cookbook.gif)
 
 #### 背景
 

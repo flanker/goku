@@ -40,7 +40,7 @@ status: publish
 
 马上打开 Chrome 监控 Network，点击某一条评论的回复，提交评论，结果：
 
-![comment-parent 0](/images/2010/comment-parent-0.png)
+![comment-parent 0]({{ site.static_url }}/images/2010/comment-parent-0.png)
 
 果然 `comment_parent` 是 0。怪不得 Comment Reply Notification 不发送邮件通知呢。
 
@@ -76,4 +76,4 @@ status: publish
 
 现在，给一个评论留言回复后，终于可以收到邮件通知了。
 
-![Comment-Reply-Notification](/images/2010/Comment-Reply-Notification.png)
+![Comment-Reply-Notification]({{ site.static_url }}/images/2010/Comment-Reply-Notification.png)
