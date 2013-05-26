@@ -108,29 +108,59 @@ name : style-iphone.scss
       }
     }
 
+    .timeline-tag h2,
+    .timeline-tag span {
+      text-shadow: none;
+    }
+
     .timeline-tag0 {
-      background-color: #3bc1ed;
+      background-color: #6BC4CA;
+      h2, span {
+        color: #693E3E;
+      }
     }
     .timeline-tag1 {
-      background-color: #ed673b;
+      background-color: #333C4D;
+      h2, span {
+        color: #6BC4CA;
+      }
     }
     .timeline-tag2 {
-      background-color: #3bed67;
+      background-color: #517AC0;
+      h2, span {
+        color: #333C4D;
+      }
     }
     .timeline-tag3 {
-      background-color: #ed3b68;
+      background-color: #B65D87;
+      h2, span {
+        color: #EEE;
+      }
     }
+
     .timeline-tag4 {
-      background-color: #ed3bc1;
+      background-color: #38282C;
+      h2, span {
+        color: #B65D87;
+      }
     }
     .timeline-tag5 {
-      background-color: #c1ed3b;
+      background-color: #F4D60D;
+      h2, span {
+        color: #38282C;
+      }
     }
     .timeline-tag6 {
-      background-color: #3b68ed;
+      background-color: #2A2B39;
+      h2, span {
+        color: #F4D60D;
+      }
     }
     .timeline-tag7 {
-      background-color: #edc03b;
+      background-color: #693E3E;
+      h2, span {
+        color: #EEE;
+      }
     }
   }
 
