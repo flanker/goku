@@ -66,3 +66,13 @@ title: home
     </div>
   </div>
 </div>
+
+<div class="recent hero-box">
+  <h2>recent posts</h2>
+  {% assign posts_collate = site.posts %}
+  <ul class="recentPosts">
+  {% for post in posts_collate limit:10 %}
+    <li class="recentPost"><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></li>
+  {% endfor %}
+  </ul>
+</div>

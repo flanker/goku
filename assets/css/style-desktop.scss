@@ -164,4 +164,54 @@ name : style-iphone.scss
     }
   }
 
+  .recent {
+    width: 980px;
+    font-size: 22px;
+
+    h2 {
+      position: relative;
+      display: inline-block;
+      font-size: 48px;
+      line-height: 48px;
+      margin: 0;
+      top: 60px;
+      left: -300px;
+      -webkit-transform: rotate(270deg);
+      -moz-transform: rotate(270deg);
+      -o-transform: rotate(270deg);
+      -ms-transform: rotate(270deg);
+      transform: rotate(270deg);
+      -webkit-transform-origin: 100% 0;
+      -moz-transform-origin: 100% 0;
+      -o-transform-origin: 100% 0;
+      -ms-transform-origin: 100% 0;
+      transform-origin: 100% 0;
+    }
+
+    .recentPosts {
+      position: relative;
+      left: 48px;
+
+      .recentPost {
+        margin: 0;
+      }
+
+      .recentPost a {
+        display: block;
+        line-height: 22px;
+        margin: 0;
+        padding: 10px;
+        -webkit-transition: all 0.5s;
+        -moz-transition: all 0.5s;
+        -o-transition: all 0.5s;
+        -ms-transition: all 0.5s;
+        transition: all 0.5s;
+      }
+      .recentPost a:hover {
+        text-decoration: none;
+        background: rgba(100, 100, 100, 0.5);
+      }
+    }
+  }
+
 }

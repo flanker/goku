@@ -8,7 +8,10 @@ html {
 body {
   background: #2a333c url({{ site.static_url }}/images/site/paper_bg.png);
 }
-
+ul, li {
+  list-style: none;
+  margin-left: 0;
+}
 /* common */
 footer p {
   width: 940px;
@@ -181,6 +184,16 @@ footer p {
     background: rgba(50, 50, 50, .4);
     float: right;
   }
+}
+
+.recent {
+  width: 90%;
+  margin: 20px auto;
+
+  li {
+    margin: 10px 0;
+  }
+
 }
 
 /* index page */
