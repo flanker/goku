@@ -132,6 +132,12 @@ name : style-iphone.scss
       margin-left: 10px;
       margin-right: 10px;
 
+      .article {
+        padding: 0 0 20px;
+        margin-bottom: 20px;
+        background: none;
+      }
+
       .blog-header {
         padding-bottom: 0;
         margin: 10px 0 10px;
