@@ -19,6 +19,8 @@ status: publish
 
 在 Mac 下使用 terminal 时，主要就是使用 shell 以及许多工具比如 git、vi 等等。这些程序和工具都有大量的配置，可以打造得自己用起来很舒服。大多数工具的配置文件都在 home 目录中 .config_file 隐藏配置文件。在 github 上可以找到[很多名为 dotfiles 的项目](https://github.com/search?langOverride=&amp;q=dotfiles&amp;repo=&amp;start_value=1&amp;type=Repositories)，都是大家分享自己的配置，可以参考学习。我们也可以把自己的配置文件放在一个 git repository 中，然后在 home 目录中使用 link 链接到 git repository 里的文件。这样就可以版本控制自己的配置文件，在换机器时也可以很方便的重用。
 
+<!-- more -->
+
 我自己目前喜欢的几个配置：
 
 - alias 常用的命令和工具，比如，ls 默认输出隐藏文件并配置颜色，ll 即为 ls -l：

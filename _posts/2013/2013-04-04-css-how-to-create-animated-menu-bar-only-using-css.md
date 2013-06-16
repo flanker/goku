@@ -31,6 +31,8 @@ status: publish
 
 菜单的 DOM 结构比较简单，就是一个 ul/li，通过一个 `selected` 来表示当前所选择的项目。如下代码：
 
+<!-- more -->
+
     <ul>
       <li><a href="#">Goku</a></li>
       <li><a href="#">Krillin</a></li>

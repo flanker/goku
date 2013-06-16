@@ -32,6 +32,8 @@ status: publish
 
 首先我们需要画一个圆圈。这个需要给外层 box 加上一个 `border-radius: 100%;` 即可。效果如下图：
 
+<!-- more -->
+
 ![实心圆]({{ site.static_url }}/images/2013/0430-circle.png)
 
 通过 `position: absolute` 在其内部使用 `:before` 伪元素再画一个内部的圆圈，设置其为白色，让我们的圆圈达到镂空效果。如下图：

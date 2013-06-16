@@ -27,6 +27,8 @@ status: publish
 
 Backbone.js 作为一个前段 MVC 应用框架，我们完全可以将其视为一个类似于 Rails 的应用程序，只不过其运行环境是在客户端的浏览器中。Backbone.js 的 Router 支持对浏览器 URL 中 #(hash) 符号后字符串的捕捉和解析，通过它来形成一个 RESTful 的应用。
 
+<!-- more -->
+
 当然这里说的 Single Page Application 单页面应用，也不是指必须讲所有页面都纳入到一个应用中。由于项目的复杂度，我们讲整个项目划分为了若干 Single Page Application 模块，每个模块由其自己的 Router 等处理。类似于下面的 URL 结构：
 
     http://hostname/top_module_1#resouces/params

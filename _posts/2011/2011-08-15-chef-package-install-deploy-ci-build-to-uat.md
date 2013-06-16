@@ -30,6 +30,8 @@ Chef 里可以使用 package 这个 resource 来安装软件，比如我们想�
 
 我们的 ci 在 build 时，最后一步有一个 task 是将产品打成一个 deb 包，deb 使用当前日前 yyyymmddHHMM 作为 version。然后在用 dpkg-scanpackages 命令将 deb 包加入到一个 package repo 中以后后续步骤使用。
 
+<!-- more -->
+
 #### 使用 chef 在 Node 上加入 ci build 源
 
 由于 ci 步骤已经将产品作为 dpkg 的源发布了，所以部署 UAT 时，chef 脚步就可以直接使用 apt 来安装产品。

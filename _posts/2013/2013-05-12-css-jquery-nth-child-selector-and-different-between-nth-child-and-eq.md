@@ -27,6 +27,8 @@ status: publish
 
 给出一个最简单的 html/css：
 
+<!-- more -->
+
     <ul>
       <li>1</li>
       <li>2</li>

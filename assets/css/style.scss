@@ -226,6 +226,23 @@ footer p {
         font-family: 'Ubuntu', "Helvetica Neue", Helvetica, Arial, "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
       }
     }
+
+    .read-more {
+      margin-top: 20px;
+
+      a {
+        color: #ece9d7;
+        background-color: #45515f;
+        line-height: 20px;
+        padding: 8px 12px;
+        border-radius: 4px;
+        text-decoration: none;
+
+        &:hover {
+          background-color: #5a6a7d;
+        }
+      }
+    }
   }
 
   .blog-header {

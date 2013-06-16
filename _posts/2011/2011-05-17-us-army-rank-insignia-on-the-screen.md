@@ -16,6 +16,8 @@ U.S. Army Rank Insignia on the Screen
 
 银幕上的美国陆军军衔标识
 
+<!-- more -->
+
 [U.S. Army Rank Insignia on Screen](http://www.slideshare.net/flankerfc/us-army-rank-insignia-on-screen "U.S. Army Rank Insignia on Screen")
 
 <div class="slideshare">

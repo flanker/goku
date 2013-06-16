@@ -28,6 +28,8 @@ status: publish
 4. build 的第三个 stage，通过 [chef](http://www.opscode.com/chef/) 在 EC2 云上创建 4 个 instance，分别部署 web、database、search、backend 四个 node，然后对他们运行 integration test
 5. 所有编译测试通过后，将 package publish 到一个 package repository 上，供之后的步骤（showcase、UAT、release、production 等）使用
 
+<!-- more -->
+
 在步骤 4，创建 instance 时，我们使用 chef 创建机器和部署产品。使用一个类似如下的命令：
 
     env-tool node create web_node web_role

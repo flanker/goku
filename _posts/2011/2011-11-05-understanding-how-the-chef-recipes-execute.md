@@ -37,6 +37,8 @@ chef 的 recipe 使用 ruby DSL 来写，语义十分明显。对于常用的部
 
 上面这段 chef recipe 中，首先安装了 httpd 的包，其次创建了一个 `/etc/myconfig` 的文件。
 
+<!-- more -->
+
 由于我们的 recipe 本身就是由 ruby 语言写的，在实际的 recipe 中，可以自己添加任何 ruby 代码来执行。
 
 那么对于下面这个 recipe，各位可以想想它的运行结果是什么？

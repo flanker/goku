@@ -31,6 +31,8 @@ status: publish
 
 ruby xml parser 性能比较 图表:
 
+<!-- more -->
+
 ![ruby xml parser 性能比较]({{ site.static_url }}/images/2013/0310-ruby-xml-parser-performance.png)
 
 ### SAX

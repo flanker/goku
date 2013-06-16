@@ -38,6 +38,8 @@ ThoughtWorks 公司定期会发布 Tech Radar，以一个雷达图表的方式�
 
 这个 Tech Radar 的实现是基于纯粹的 CSS（唯一的一点 javascript 是为了控制雷达旋转的启动与暂停，和样式没有关系）。Tech Radar 的 html 基本没有多余的 DOM element，是一个有意义的完好结构的文档。
 
+<!-- more -->
+
 然后通过多种 CSS 手段，包括 `transform`、 `rotate`、 `border-radius`、 `background gradient`、 `z-index`、 `animation`、 `box-sizing`、 `clip` 和 `rect`，来实现了雷达的 圆圈、 渐变色、 覆盖、 旋转 等各个要素。由于目标是不要给 DOM 带来额外操作，所以很多东西都是通过 `:before` `:after` 伪元素来实现的。
 
 * transform / rotate 让雷达扫描轴选择特定的角度

@@ -15,7 +15,14 @@ header: Pages
       Feng Zhichao @ <span class="date">{{ post.date | date_to_long_string }}</span>
     </p>
     <div class="content post-content">
-    {{ post.content }}
+    {% if post.content contains "<!-- more -->" %}
+      {{ post.content | split:"<!-- more -->" | first % }}
+    {% else %}
+      {{ post.content | truncatewords:80 }}
+    {% endif %}
+    </div>
+    <div class="read-more">
+      <a href="{{ post.url }}">Read More &gt;&gt;&gt;</a>
     </div>
 </div>
 {% endfor %}
