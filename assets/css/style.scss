@@ -259,6 +259,13 @@ footer p {
     float: left;
     width: 620px;
     margin-left: 0;
+
+    ul, li {
+      list-style-type: disc;
+    }
+    ul {
+      margin-left: 2em;
+    }
   }
 }
 
