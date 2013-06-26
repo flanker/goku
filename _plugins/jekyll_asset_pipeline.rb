@@ -17,7 +17,7 @@ module JekyllAssetPipeline
   class Pipeline
     class << self
       def hash(source, manifest, options = {})
-        Digest::MD5.hexdigest(source + manifest.to_s)
+        Digest::MD5.hexdigest(manifest.to_s)
       end
     end
   end
