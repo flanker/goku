@@ -13,6 +13,14 @@ module JekyllAssetPipeline
       "<script src='#{Configr.site['static_url']}/#{@path}/#{@filename}' type='text/javascript'></script>\n"
     end
   end
+
+  class Pipeline
+    class << self
+      def hash(source, manifest, options = {})
+        Digest::MD5.hexdigest(source + manifest.to_s)
+      end
+    end
+  end
 end
 
 module JekyllAssetPipeline
