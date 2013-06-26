@@ -20,18 +20,21 @@
 
   <link href="{{ BASE_PATH }}/atom.xml" rel="alternate" type="application/atom+xml" title="www.chaojiwudi.com ATOM Feed"/>
 
-  <!-- Le styles -->
-  <link href="{{ site.static_url }}/assets/css/bootstrap.css" rel="stylesheet">
-  <link href="{{ site.static_url }}/assets/css/style.css" rel="stylesheet">
-  <link href="{{ site.static_url }}/assets/css/style-desktop.css" media="screen and (min-width: 569px)" rel="stylesheet">
-  <link href="{{ site.static_url }}/assets/css/style-iphone.css" media="screen and (max-width: 568px)" rel="stylesheet">
-  <link href="{{ site.static_url }}/assets/css/style-iphone-landscape.css" media="screen and (max-height: 320px)" rel="stylesheet">
-  <link href="{{ site.static_url }}/assets/css/style-menu.css" media="screen and (min-width: 569px)" rel="stylesheet">
+  {% css_asset_tag application %}
+  - /assets/css/bootstrap.css
+  - /assets/css/style.scss
+  - /assets/css/style-desktop.scss
+  - /assets/css/style-iphone.scss
+  - /assets/css/style-iphone-landscape.scss
+  - /assets/css/style-menu.scss
+  {% endcss_asset_tag %}
 
-  <script src="{{ site.static_url }}/assets/javascripts/jquery-1.7.2.min.js" type="text/javascript"></script>
-  <script src="{{ site.static_url }}/assets/javascripts/bootstrap-tooltip.js" type="text/javascript"></script>
-  <script src="{{ site.static_url }}/assets/javascripts/bootstrap-modal.js" type="text/javascript"></script>
-  <script src="{{ site.static_url }}/assets/javascripts/folding-fan.js" type="text/javascript"></script>
+  {% javascript_asset_tag application %}
+  - /assets/javascripts/jquery-1.7.2.min.js
+  - /assets/javascripts/bootstrap-tooltip.js
+  - /assets/javascripts/bootstrap-modal.js
+  - /assets/javascripts/folding-fan.js
+  {% endjavascript_asset_tag %}
 
   <!-- Le fav and touch icons -->
   <!-- Update these with your own images

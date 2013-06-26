@@ -41,6 +41,9 @@ GEM
       liquid (~> 2.3)
       maruku (~> 0.5)
       pygments.rb (~> 0.3.2)
+    jekyll-asset-pipeline (0.1.6)
+      jekyll (~> 0.12)
+      liquid (~> 2.4)
     json (1.7.0)
     kramdown (0.14.2)
     launchy (2.1.0)
@@ -90,6 +93,7 @@ DEPENDENCIES
   heroku
   instagram
   jekyll
+  jekyll-asset-pipeline
   json
   rake
   rdiscount
