@@ -12,7 +12,8 @@ exclude: [
   "vendor",
   "Gemfile",
   "Gemfile.lock",
-  "excludes"
+  "excludes",
+  "newrelic.yml"
   ]
 auto: true
 pygments: true

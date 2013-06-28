@@ -9,6 +9,7 @@ gem 'RedCloth'
 gem 'compass'
 gem 'haml'
 gem 'jekyll-asset-pipeline'
+gem 'newrelic_rpm'
 
 group :development do
   gem 'rake'

@@ -57,6 +57,7 @@ GEM
     multi_json (1.0.4)
     multipart-post (1.1.5)
     netrc (0.7.1)
+    newrelic_rpm (3.6.5.130)
     posix-spawn (0.3.6)
     pygments.rb (0.3.7)
       posix-spawn (~> 0.3.6)
@@ -95,6 +96,7 @@ DEPENDENCIES
   jekyll
   jekyll-asset-pipeline
   json
+  newrelic_rpm
   rake
   rdiscount
   ruby-debug19
