@@ -167,6 +167,16 @@ footer p {
 }
 .timeline {
   margin: 20px auto;
+
+  .timeline-date {
+    margin: 10px 0;
+    font-family: 'Oswald', "Helvetica Neue", Helvetica, Arial, "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 32px;
+    color: #e36b23;
+    text-rendering: optimizelegibility;
+  }
 }
 .about {
   background: url({{ site.static_url }}/images/site/my-macbook.jpg) no-repeat center;

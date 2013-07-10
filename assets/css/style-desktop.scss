@@ -96,7 +96,7 @@
       -ms-transform: rotate(-90deg);
       transform: rotate(-90deg);
 
-      h2 {
+      .timeline-date {
         margin-bottom: 30px;
       }
       span {
@@ -104,57 +104,57 @@
       }
     }
 
-    .timeline-tag h2,
+    .timeline-tag .timeline-date,
     .timeline-tag span {
       text-shadow: none;
     }
 
     .timeline-tag0 {
       background-color: #6BC4CA;
-      h2, span {
+      .timeline-date, span {
         color: #693E3E;
       }
     }
     .timeline-tag1 {
       background-color: #333C4D;
-      h2, span {
+      .timeline-date, span {
         color: #6BC4CA;
       }
     }
     .timeline-tag2 {
       background-color: #517AC0;
-      h2, span {
+      .timeline-date, span {
         color: #333C4D;
       }
     }
     .timeline-tag3 {
       background-color: #B65D87;
-      h2, span {
+      .timeline-date, span {
         color: #EEE;
       }
     }
 
     .timeline-tag4 {
       background-color: #38282C;
-      h2, span {
+      .timeline-date, span {
         color: #B65D87;
       }
     }
     .timeline-tag5 {
       background-color: #F4D60D;
-      h2, span {
+      .timeline-date, span {
         color: #38282C;
       }
     }
     .timeline-tag6 {
       background-color: #2A2B39;
-      h2, span {
+      .timeline-date, span {
         color: #F4D60D;
       }
     }
     .timeline-tag7 {
       background-color: #693E3E;
-      h2, span {
+      .timeline-date, span {
         color: #EEE;
       }
     }
