@@ -2,10 +2,16 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Feng Zhichao 冯智超 - {{ page.title }}</title>
-  {% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
-  <meta name="author" content="{{ site.author.name }}">
 
+  {% if page.type == 'post' %}
+    <title>博客文章 - 前端开发 - 冯智超的个人网站 Feng Zhichao</title>
+    <meta name="description" content="{{ page.title }}">
+  {% else %}
+    <title>{{ page.title }} - 前端开发 - 冯智超的个人网站 Feng Zhichao</title>
+    <meta name="description" content="{{ page.description }}">
+  {% endif %}
+
+  <meta name="author" content="{{ site.author.name }}">
   <meta name="google-site-verification" content="12krOD__WVZXDs1JQyyImb-VsplI_cESnn4amt8h0zQ" />
 
   <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
