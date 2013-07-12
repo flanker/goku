@@ -13,7 +13,6 @@ tags:
 type: post
 status: publish
 ---
-初学者文章，高手请路过 :)，今天被问到 JS 里的 bind，答不出所以然来，Google 学习了一下，作此记录。
 
 `Function.prototype.bind` 这个方法是 ECMAScript 5 新增加的，在 Firefox 4/Chrome 中都支持，IE8 应该还不支持。
 
