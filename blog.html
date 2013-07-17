@@ -11,7 +11,7 @@ description: 所有文章列表. 冯智超的个人网站, 博客. 关注前端�
 
 {% for post in paginator.posts %}
 <div class="article">
-    <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+    <h2><a title="post.title" rel="Detail" href="{{ post.url }}">{{ post.title }}</a></h2>
     <p class="author">
       Feng Zhichao @ <span class="date">{{ post.date | date_to_long_string }}</span>
     </p>
@@ -23,7 +23,7 @@ description: 所有文章列表. 冯智超的个人网站, 博客. 关注前端�
     {% endif %}
     </div>
     <div class="read-more">
-      <a href="{{ post.url }}">Read More &gt;&gt;&gt;</a>
+      <a title="Read more" rel="Detail" href="{{ post.url }}">Read More &gt;&gt;&gt;</a>
     </div>
 </div>
 {% endfor %}

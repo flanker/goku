@@ -32,7 +32,7 @@ description: 所有文章归档. 冯智超的个人网站, 博客. 关注前端�
             %span
               %span.blog-date
                 {{ post.date | date: "%B %e, %Y" }} &raquo;
-              %a{:href => "{{ BASE_PATH }}{{ post.url }}"} {{ post.title }}
+              %a{:title => "post.title", :href => "{{ BASE_PATH }}{{ post.url }}"} {{ post.title }}
   {% if next_year != "" %}
     {% if this_year != next_year %}
 

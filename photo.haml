@@ -12,8 +12,8 @@ description: 查看我的 Instagram 个人图片. 冯智超的个人网站, 博�
   {% instagram accesstokenpath:instagram %}
   %li.item
     .thumbnail
-      %a{:alt => "{{ item.caption.text }}", :href => "{{ item.link }}"}
-        %img{"data-image" => "{{ item.images.standard_resolution.url }}", :src => "{{ item.images.low_resolution.url }}", :title => "{{ item.caption.text }}"}/
+      %a{:title => "{{ item.caption.text }}", :href => "{{ item.link }}"}
+        %img{:alt => "{{ item.caption.text }}", "data-image" => "{{ item.images.standard_resolution.url }}", :src => "{{ item.images.low_resolution.url }}", :title => "{{ item.caption.text }}"}/
       {% if item.caption.text %}
       %p> {{ item.caption.text }}
       {% endif %}
