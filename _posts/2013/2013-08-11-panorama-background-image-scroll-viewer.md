@@ -39,7 +39,7 @@ status: publish
 
 实现这个，在这里，给 `height` 设置为 0，给 `padding-bottom` 设置为期望的比率（比如 40%）。padding-bottm 百分比数值的计算，是以 width 来基数的，所以这样间接的实现了固定宽高比，自适应的 box 布局。
 
-## 铺满的图片
+### 铺满的图片
 
 有了 box，我们希望图片能够铺满它。这里使用了 `background-size` 这个 CSS 属性。
 
