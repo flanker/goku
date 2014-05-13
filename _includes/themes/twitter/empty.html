@@ -41,6 +41,7 @@
   - /assets/javascripts/bootstrap-tooltip.js
   - /assets/javascripts/bootstrap-modal.js
   - /assets/javascripts/folding-fan.js
+  - /assets/javascripts/progress-bar.js
   {% endjavascript_asset_tag %}
 
   <!-- Le fav and touch icons -->
@@ -52,6 +53,7 @@
   -->
 </head>
 <body class="{{ page.type }}">
+  <progress value="0"></progress>
   <div class="body-container">
     {% include views/navbar.html %}
 

@@ -1,5 +1,34 @@
 @media (min-width: 569px) {
 
+  body.post {
+    progress {
+      display: initial;
+      position: fixed;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 5px;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      border: none;
+      background-color: transparent;
+      color: #e36b23;
+    }
+
+    progress::-webkit-progress-bar {
+      background-color: transparent;
+    }
+
+    progress::-webkit-progress-value {
+      background-color: #e36b23;
+    }
+
+    progress::-moz-progress-bar {
+      background-color: #e36b23;
+    }
+  }
+
   .navbar-top .navbar-inner .navbar-container {
 
     .fancy-link {

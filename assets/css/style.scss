@@ -1,13 +1,16 @@
 html {
   -webkit-font-smoothing: antialiased;
 }
+
 body {
   background: #2a333c url({{ site.static_url }}/images/site/paper_bg.png);
 }
+
 ul, li {
   list-style: none;
   margin-left: 0;
 }
+
 /* common */
 footer p {
   width: 940px;
@@ -15,19 +18,27 @@ footer p {
   margin-right: auto;
   text-align: center;
 }
+
+body progress {
+  display: none;
+}
+
 .slideshare iframe {
   height: 400px;
   width: 600px
 }
+
 .home .navbar-top {
   position: absolute;
   width: 980px;
   left: 50%;
   margin-left: -490px;
 }
+
 .navbar-top {
   margin-bottom: 0;
 }
+
 .navbar-top .navbar-inner {
   background-color: transparent;
   background: transparent;
@@ -89,7 +100,7 @@ footer p {
     list-style: none;
 
     .twitter {
-      background: url({{ site.static_url }}/images/site/socials.png) -56px 0 no-repeat;
+      background: url({{ site.static_url }}/images/site/socials.png) - 56 px 0 no-repeat;
       &:hover {
         background-position: -56px -38px;
       }
@@ -101,13 +112,13 @@ footer p {
       }
     }
     .github {
-      background: url({{ site.static_url }}/images/site/socials.png) -28px 0 no-repeat;
+      background: url({{ site.static_url }}/images/site/socials.png) - 28 px 0 no-repeat;
       &:hover {
         background-position: -28px -38px;
       }
     }
     .youtube {
-      background: url({{ site.static_url }}/images/site/socials.png) -84px 0 no-repeat;
+      background: url({{ site.static_url }}/images/site/socials.png) - 84 px 0 no-repeat;
       &:hover {
         background-position: -84px -38px;
       }
@@ -143,6 +154,7 @@ footer p {
     font-size: 18px;
   }
 }
+
 .start {
   background: url({{ site.static_url }}/images/site/fengzhichao-jumping.jpg) no-repeat center;
   background-size: cover;
@@ -168,6 +180,7 @@ footer p {
   }
 
 }
+
 .timeline {
   margin: 20px auto;
 
@@ -181,6 +194,7 @@ footer p {
     text-rendering: optimizelegibility;
   }
 }
+
 .about {
   background: url({{ site.static_url }}/images/site/my-macbook.jpg) no-repeat center;
   background-size: cover;
@@ -296,6 +310,7 @@ footer p {
     }
   }
 }
+
 .modal {
   top: 10%;
   left: 50%;
@@ -304,12 +319,13 @@ footer p {
     max-height: none;
   }
 }
+
 /* tags */
 .tag_box.inline {
   list-style: none outside none;
   li {
     float: left;
-    margin:0 8px 8px 0;
+    margin: 0 8px 8px 0;
     padding: 0;
 
     a {
