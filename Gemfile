@@ -1,4 +1,5 @@
 source 'https://rubygems.org'
+ruby '2.0.0'
 
 gem 'jekyll'
 gem 'rdiscount'
@@ -9,4 +10,7 @@ gem 'rake'
 gem 'jekyll-asset-pipeline'
 gem 'yui-compressor'
 gem 'deep_merge'
-gem 'byebug'
+
+group :development do
+  gem 'byebug'
+end
