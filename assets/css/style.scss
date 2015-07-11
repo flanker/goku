@@ -100,7 +100,7 @@ body progress {
     list-style: none;
 
     .twitter {
-      background: url({{ site.static_url }}/images/site/socials.png) - 56 px 0 no-repeat;
+      background: url({{ site.static_url }}/images/site/socials.png) -56px 0 no-repeat;
       &:hover {
         background-position: -56px -38px;
       }
@@ -112,13 +112,13 @@ body progress {
       }
     }
     .github {
-      background: url({{ site.static_url }}/images/site/socials.png) - 28 px 0 no-repeat;
+      background: url({{ site.static_url }}/images/site/socials.png) -28px 0 no-repeat;
       &:hover {
         background-position: -28px -38px;
       }
     }
     .youtube {
-      background: url({{ site.static_url }}/images/site/socials.png) - 84 px 0 no-repeat;
+      background: url({{ site.static_url }}/images/site/socials.png) -84px 0 no-repeat;
       &:hover {
         background-position: -84px -38px;
       }

@@ -63,7 +63,7 @@ module Jekyll
 
   	def self.paginate_files(config)
   	  config['paginate_files'] ||= ['index.html']
-  	  config.pluralized_array('paginate_file', 'paginate_files')
+  	  config['paginate_files'].compact
   	end
 
   	def self.template(config)

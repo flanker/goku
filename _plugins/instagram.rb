@@ -7,7 +7,7 @@ module Instagram
     def self_media(options)
       p 'Request Instagram - api: users/self/media/recent options: ' + options.to_s
       result = get('users/self/media/recent', options)
-      return with_readable_time(result.data), result.pagination.next_max_id
+      return with_readable_time(result), result.pagination.next_max_id
     end
 
     def with_readable_time(data)

@@ -1,3 +1,5 @@
+require 'deep_merge'
+
 module Jekyll
 
   class Page

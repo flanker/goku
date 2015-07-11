@@ -15,8 +15,7 @@ exclude: [
   "excludes",
   "newrelic.yml"
   ]
-auto: true
-pygments: true
+highlighter: pygments
 markdown: rdiscount
 paginate: 5
 paginate_files: ['blog.html']
