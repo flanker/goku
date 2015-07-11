@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
 
-  <title>{{ page.title }} - 前端开发 - 冯智超的个人网站 Feng Zhichao</title>
+  <title>{{ page.title }} - 晒电影</title>
   <meta name="description" content="{{ page.description }}">
 
   <meta name="author" content="{{ site.author.name }}">
@@ -22,21 +22,12 @@
 
   <link href="{{ BASE_PATH }}/atom.xml" rel="alternate" type="application/atom+xml" title="www.chaojiwudi.com ATOM Feed"/>
 
-  {% css_asset_tag application %}
-  - /assets/css/bootstrap.css
-  - /assets/css/style.scss
-  - /assets/css/style-desktop.scss
-  - /assets/css/style-iphone.scss
-  - /assets/css/style-iphone-landscape.scss
-  - /assets/css/style-menu.scss
+  {% css_asset_tag movie %}
+  - /assets/css/movies/movie.scss
   {% endcss_asset_tag %}
 
-  {% javascript_asset_tag application %}
-  - /assets/javascripts/jquery-1.7.2.min.js
-  - /assets/javascripts/bootstrap-tooltip.js
-  - /assets/javascripts/bootstrap-modal.js
-  - /assets/javascripts/folding-fan.js
-  - /assets/javascripts/progress-bar.js
+  {% javascript_asset_tag movie %}
+  - /assets/javascripts/movies/movie.js
   {% endjavascript_asset_tag %}
 
   <!-- Le fav and touch icons -->

@@ -11,7 +11,7 @@ class Configr
     private
 
     def settings
-      YAML.load_file(config_file)
+      YAML.load(ERB.new(File.read(config_file)).result)
     end
 
     def config_file
