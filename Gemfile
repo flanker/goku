@@ -10,8 +10,6 @@ gem 'rake'
 gem 'jekyll-asset-pipeline'
 gem 'yui-compressor'
 gem 'deep_merge'
-gem 'rack-jekyll'
-gem 'puma'
 
 group :development do
   gem 'byebug'
