@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
 
-  <title>晒电影</title>
+  <title>{{ page.title }} - 晒电影</title>
   <meta name="description" content="{{ page.description }}">
 
   <meta name="author" content="{{ site.author.name }}">
@@ -15,7 +15,7 @@
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
 
-  <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"/>
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   <meta name="apple-mobile-web-app-title" content="超级无敌">
   <link rel="apple-touch-icon" href="/images/site/chaojiwudi.png" />
@@ -26,12 +26,6 @@
   - /assets/css/movies/movie.scss
   {% endcss_asset_tag %}
 
-  {% javascript_asset_tag movie %}
-  - /assets/javascripts/jquery-1.7.2.min.js
-  - /assets/javascripts/movies/jquery.tap.js
-  - /assets/javascripts/movies/movie.js
-  {% endjavascript_asset_tag %}
-
   <!-- Le fav and touch icons -->
   <!-- Update these with your own images
     <link rel="shortcut icon" href="images/favicon.ico">
@@ -41,7 +35,15 @@
   -->
 </head>
 <body>
-  {{ content }}
+  <div class="wrap">
+    {{ content }}
+  </div>
   {% include JB/analytics %}
+
+  {% javascript_asset_tag movie %}
+  - /assets/javascripts/jquery-1.7.2.min.js
+  - /assets/javascripts/movies/jquery.tap.js
+  - /assets/javascripts/movies/movie.js
+  {% endjavascript_asset_tag %}
 </body>
 </html>

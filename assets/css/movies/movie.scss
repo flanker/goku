@@ -1,10 +1,29 @@
-img {
+* {
+  margin: 0;
+  padding: 0;
+}
+html, body {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  font-family: Helvetica Neue, Arial, Helvetica, sans-serif;
+}
+.wrap {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+}
+.logo {
   position: absolute;
   left: -1000px;
   top: -1000px;
-}
-html {
-  font-family: Helvetica Neue, Arial, Helvetica, sans-serif;
+  img {
+    width: 300px;
+    max-width: 300px;
+  }
 }
 .poster {
   background-color: black;
@@ -19,10 +38,11 @@ html {
   background-repeat: no-repeat;
 }
 .movie-info {
+  box-sizing: border-box;
   position: absolute;
-  bottom: 0;
+  bottom: -80px;
   left: 0;
-  height: 60px;
+  height: 80px;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.75);
   padding: 10px;
@@ -32,6 +52,7 @@ html {
   .name {
     display: inline-block;
     font-size: 1.5em;
+    margin: 0px;
   }
   .year {
     display: inline-block;
