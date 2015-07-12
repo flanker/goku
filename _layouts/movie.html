@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
 
-  <title>{{ page.title }} - 晒电影</title>
+  <title>晒电影</title>
   <meta name="description" content="{{ page.description }}">
 
   <meta name="author" content="{{ site.author.name }}">
@@ -27,6 +27,8 @@
   {% endcss_asset_tag %}
 
   {% javascript_asset_tag movie %}
+  - /assets/javascripts/jquery-1.7.2.min.js
+  - /assets/javascripts/movies/jquery.tap.js
   - /assets/javascripts/movies/movie.js
   {% endjavascript_asset_tag %}
 

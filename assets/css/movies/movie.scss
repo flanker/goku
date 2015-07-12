@@ -3,6 +3,9 @@ img {
   left: -1000px;
   top: -1000px;
 }
+html {
+  font-family: Helvetica Neue, Arial, Helvetica, sans-serif;
+}
 .poster {
   background-color: black;
   background-image: url(/images/movies/ant-man.jpg);
@@ -14,6 +17,31 @@ img {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+}
+.movie-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 60px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.75);
+  padding: 10px;
+  color: #f4f4f4;
+  transition: bottom 1s;
+
+  .name {
+    display: inline-block;
+    font-size: 1.5em;
+  }
+  .year {
+    display: inline-block;
+    font-size: 0.8em;
+    padding-left: 10px;
+  }
+  .tagline {
+    padding-top: 5px;
+    font-size: 0.8em;
+  }
 }
 
 @media (min-width: 569px) {
