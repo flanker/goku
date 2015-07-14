@@ -37,6 +37,33 @@ html, body {
   background-size: cover;
   background-repeat: no-repeat;
 }
+.swipe-hint {
+  position: absolute;
+  left: 50%;
+  bottom: 200px;
+  text-align: center;
+  width: 80%;
+  background-color: rgba(255, 255, 255, 0.4);
+  margin-left: -40%;
+  padding: 10px 0;
+  border-radius: 8px;
+
+  span {
+    font-size: 1.5em;
+    background: -webkit-gradient(linear, left top, right top, color-stop(0, #4d4d4d), color-stop(0.4, #4d4d4d), color-stop(0.5, white), color-stop(0.6, #4d4d4d), color-stop(1, #4d4d4d));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: slidetounlock 5s linear infinite;
+  }
+}
+@-webkit-keyframes slidetounlock {
+  0% {
+    background-position: 420px 0;
+  }
+  100%{
+    background-position: -420px 0;
+  }
+}
 .movie-info {
   box-sizing: border-box;
   position: absolute;
