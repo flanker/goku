@@ -2,11 +2,11 @@ $(function() {
   var $movieInfo = $('.movie-info');
   var height = $movieInfo.outerHeight();
 
-  setTimeout(function() {
+  setTimeout(function () {
     $movieInfo.css('bottom', '0px');
   }, 500)
 
-  setTimeout(function() {
+  setTimeout(function () {
     $('.swipe-hint').fadeOut(1000);
   }, 4000)
 
@@ -18,11 +18,15 @@ $(function() {
     } else {
       $movieInfo.css('bottom', '0px');
     }
-  }).swiperight(function (e) {
-    $('.poster').append('swipe right; ')
-  }).swipeleft(function (e) {
-    $('.poster').append('swipe left; ')
   }).scrollstart(function (e) {
     e.preventDefault();
+  });
+
+  $(function() {
+    $(".swipe-show").swipeshow({
+      interval: 4000,
+      speed: 700,
+      friction: 0.3,
+    });
   });
 });

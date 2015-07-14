@@ -8,6 +8,9 @@ html, body {
   overflow: hidden;
   font-family: Helvetica Neue, Arial, Helvetica, sans-serif;
 }
+ul, li {
+  list-style-type: none;
+}
 .wrap {
   position: absolute;
   top: 0;
@@ -25,14 +28,17 @@ html, body {
     max-width: 300px;
   }
 }
-.poster {
+.slides, .slide {
+  color: #f4f4f4;
   background-color: black;
-  background-image: url(/images/movies/ant-man.jpg);
   position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
-  right: 0;
+  width: 100%;
+}
+.poster {
+  background-image: url(/images/movies/ant-man.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
