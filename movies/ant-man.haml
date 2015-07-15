@@ -9,18 +9,23 @@ description: 电影
 {% include JB/setup %}
 
 .logo
-  %img{src: "/images/movies/ant-man-logo.jpg"}
+  %img{src: "#{Configr.site['static_url']}/images/movies/ant-man-logo.jpg"}
 
 .swipe-show
   %ul.slides
-    %li.slide.poster
-
-    %li.slide.ticket
-      我看了这个电影1
-    %li.slide.ticket
-      我看了这个电影2
-    %li.slide.ticket
-      我看了这个电影3
+    %li.slide.poster.poster1
+    %li.slide.poster.trailer1
+      .video
+        %img{ src: "#{Configr.site['static_url']}/images/movies/ant-man-trailer1.jpg" }
+        %video{ src: "#{Configr.site['static_url']}/images/movies/ant-man-trailer1-720.mp4" }
+        %a{ href: '#' }
+          %span.play
+            %span
+    %li.slide.poster.poster2
+    %li.slide.poster.poster3
+    %li.slide.poster.poster4
+    %li.slide.poster.poster5
+    %li.slide.poster.poster6
 
 .movie-info
   %h1.name

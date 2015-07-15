@@ -12,6 +12,7 @@ ul, li {
   list-style-type: none;
 }
 .wrap {
+  background: #555 url({{ site.static_url }}/images/movies/bg.png);
   position: absolute;
   top: 0;
   bottom: 0;
@@ -38,10 +39,73 @@ ul, li {
   width: 100%;
 }
 .poster {
-  background-image: url(/images/movies/ant-man.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+}
+.poster1 { background-image: url({{ site.static_url }}/images/movies/ant-man1.jpg); }
+.poster2 { background-image: url({{ site.static_url }}/images/movies/ant-man2.jpg); }
+.poster3 { background-image: url({{ site.static_url }}/images/movies/ant-man3.jpg); }
+.poster4 { background-image: url({{ site.static_url }}/images/movies/ant-man4.jpg); }
+.poster5 { background-image: url({{ site.static_url }}/images/movies/ant-man5.jpg); }
+.poster6 { background-image: url({{ site.static_url }}/images/movies/ant-man6.jpg); }
+.video {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  img {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+  }
+  video {
+    height: 100%;
+    width: 100%;
+    display: none;
+  }
+  a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    .play {
+      position:absolute;
+      width:50px;
+      height:50px;
+      border:3px solid #fff;
+      top:50%;
+      right:50%;
+      margin:-28px;
+      border-radius:30px;
+      box-shadow:1px 1px 2px rgba(0,0,0,.2);
+    }
+    .play span {
+      position:absolute;
+      width:0;
+      height:0;
+      border-top:12px solid transparent;
+      border-bottom:12px solid transparent;
+      border-left:20px solid #fff;
+      top:15px;
+      left:18px;
+    }
+  }
+}
+.map {
+  background-image: url({{ site.static_url }}/images/movies/map.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  bottom: 0;
 }
 .swipe-hint {
   position: absolute;

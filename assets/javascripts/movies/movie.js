@@ -24,9 +24,17 @@ $(function() {
 
   $(function() {
     $(".swipe-show").swipeshow({
+      autostart: false,
       interval: 4000,
       speed: 700,
       friction: 0.3,
     });
+  });
+
+  $('.video a').click(function (e) {
+    $('.video img').hide();
+    $('.video a').hide();
+    $('.video video').show()[0].play();
+    e.preventDefault();
   });
 });
