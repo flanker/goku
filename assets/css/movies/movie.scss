@@ -39,6 +39,11 @@ ul, li {
   width: 100%;
 }
 .poster {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -107,33 +112,6 @@ ul, li {
   top: 50%;
   bottom: 0;
 }
-.swipe-hint {
-  position: absolute;
-  left: 50%;
-  bottom: 200px;
-  text-align: center;
-  width: 80%;
-  background-color: rgba(255, 255, 255, 0.4);
-  margin-left: -40%;
-  padding: 10px 0;
-  border-radius: 8px;
-
-  span {
-    font-size: 1.5em;
-    background: -webkit-gradient(linear, left top, right top, color-stop(0, #4d4d4d), color-stop(0.4, #4d4d4d), color-stop(0.5, white), color-stop(0.6, #4d4d4d), color-stop(1, #4d4d4d));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -webkit-animation: slidetounlock 5s linear infinite;
-  }
-}
-@-webkit-keyframes slidetounlock {
-  0% {
-    background-position: 420px 0;
-  }
-  100%{
-    background-position: -420px 0;
-  }
-}
 .movie-info {
   box-sizing: border-box;
   position: absolute;
@@ -141,10 +119,10 @@ ul, li {
   left: 0;
   height: 80px;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.75);
   padding: 10px;
   color: #f4f4f4;
   transition: bottom 0.5s;
+  background-color: rgba(50, 50, 50, 0.6);
 
   .name {
     display: inline-block;
@@ -160,6 +138,79 @@ ul, li {
     padding-top: 5px;
     font-size: 0.8em;
   }
+}
+.nav {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: -20px;
+  background-color: rgba(50, 50, 50, 0.7);
+  border-radius: 100%;
+  transition: top 0.5s;
+}
+.nav.next {
+  right: 20px;
+}
+.nav.prev {
+  left: 20px;
+}
+.nav:after {
+  color: #fff;
+  position: absolute;
+  top: 0px;
+  font-size: 0.8em;
+  text-align: center;
+  width: 100%;
+  line-height: 20px;
+}
+.nav.next:after {
+  content: '>';
+}
+.nav.prev:after {
+  content: '<';
+}
+
+.dots {
+  position: absolute;
+  top: -20px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  list-style: none;
+  font-size: 0;
+  transition: top 0.5s;
+
+  .dot-item {
+    list-style: none;
+    display: inline-block;
+    width: 10px;
+    height: 15px;
+    line-height: 15px;
+    text-align: center;
+    cursor: pointer;
+    opacity: 0.8;
+
+    .dot {
+      display: inline-block;
+      width: 5px;
+      height: 5px;
+      border-radius: 6px;
+      font-size: 0;
+      border: solid 1px rgba(255, 255, 255, 0.8);
+      box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+    &.active .dot {
+      background-color: #fff;
+    }
+  }
+}
+.dots, .dot-item, .dot {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border: 0;
+  background: transparent;
 }
 
 @media (min-width: 569px) {
