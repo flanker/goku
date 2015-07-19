@@ -48,6 +48,7 @@ ul, li {
   background-size: cover;
   background-repeat: no-repeat;
 }
+.poster-collection { background-image: url({{ site.static_url }}/images/movies/poster-collection.jpg); }
 .poster1 { background-image: url({{ site.static_url }}/images/movies/ant-man1.jpg); }
 .poster2 { background-image: url({{ site.static_url }}/images/movies/ant-man2.jpg); }
 .poster3 { background-image: url({{ site.static_url }}/images/movies/ant-man3.jpg); }
@@ -111,6 +112,15 @@ ul, li {
   right: 0;
   top: 50%;
   bottom: 0;
+}
+.row {
+  font-size: 0;
+  white-space: nowrap;
+  overflow: hidden;
+
+  img {
+    width: 33.34%;
+  }
 }
 .movie-info {
   box-sizing: border-box;
