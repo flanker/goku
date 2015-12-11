@@ -9,7 +9,7 @@ description: 查看我的 Instagram 个人图片. 冯智超的个人网站, 博�
 {% include JB/setup %}
 
 %ul.photo.thumbnails
-  {% instagram accesstokenpath:instagram %}
+  {% instagram accesstokenkey:INSTAGRAM_TOKEN %}
   %li.item
     .thumbnail
       %a{:title => "{{ item.caption.text }}", :href => "{{ item.link }}"}

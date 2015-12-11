@@ -11,6 +11,7 @@ web:
     file: docker-compose.yml
     service: base
   environment:
+    INSTAGRAM_TOKEN: 14843834.4b77c01.986769d5d83c40f2816f6602a1deab3a
     STATIC_BASE: http://192.168.99.100
   command: jekyll serve -H0.0.0.0
 
@@ -19,5 +20,6 @@ build:
     file: docker-compose.yml
     service: base
   environment:
+    INSTAGRAM_TOKEN: 14843834.4b77c01.986769d5d83c40f2816f6602a1deab3a
     STATIC_BASE: http://www.chaojiwudi.com
   command: jekyll build

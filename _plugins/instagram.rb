@@ -35,8 +35,8 @@ end
 
 class InstagramLoader
   class << self
-    def photos(accesstokenpath, page_size = 50, next_max_id = nil)
-      client = create_client(accesstokenpath)
+    def photos(accesstoken, page_size = 50, next_max_id = nil)
+      client = create_client(accesstoken)
       data_set = []
       begin
         options = {count: page_size}
@@ -47,9 +47,7 @@ class InstagramLoader
       data_set
     end
 
-    def create_client(accesstokenpath)
-      accesstokenfile = File.expand_path(File.dirname(__FILE__) + '/../' + accesstokenpath)
-      accesstoken = File.open(accesstokenfile).gets
+    def create_client(accesstoken)
       Instagram.client(:access_token => accesstoken)
     end
   end
@@ -75,7 +73,7 @@ module Jekyll
         raise SyntaxError.new("Syntax Error in 'delicious' - Valid syntax: instagram accesstokenpath:x]")
       end
 
-      @accesstoken = @attributes['accesstokenpath']
+      @accesstoken = ENV.fetch(@attributes['accesstokenkey'])
       @name = 'item'
 
       super
