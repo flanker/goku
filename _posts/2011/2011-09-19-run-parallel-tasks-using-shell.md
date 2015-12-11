@@ -14,7 +14,7 @@ tags:
 type: post
 status: publish
 ---
-![gas pipeline]({{ site.static_url }}/images/2011/Ukrainian_Naftogaz_pipelines_paid_for_by_European_companies.jpg)
+![gas pipeline]({{ Configr.site['static_url'] }}/images/2011/Ukrainian_Naftogaz_pipelines_paid_for_by_European_companies.jpg)
 
 最近的工作一直和 build 构建、deployment 部署相关，并且一直和 [chef](http://www.opscode.com/chef/) 打交道。这里遇到了一个在 shell 中创建并行任务的事情。
 

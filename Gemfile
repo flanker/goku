@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
-ruby '2.0.0'
 
 gem 'jekyll'
+gem 'jekyll-paginate'
 gem 'rdiscount'
 gem 'json'
 gem 'instagram'

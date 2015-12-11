@@ -26,7 +26,7 @@ status: publish
 
 (图片为 gif 截图，实际效果请看 [这里](http://flanker.github.io/h5c3/time-circle/))
 
-![秒表时钟效果]({{ site.static_url }}/images/2013/0430-stopwatcher.gif)
+![秒表时钟效果]({{ Configr.site['static_url'] }}/images/2013/0430-stopwatcher.gif)
 
 ### 第一步
 
@@ -34,11 +34,11 @@ status: publish
 
 <!-- more -->
 
-![实心圆]({{ site.static_url }}/images/2013/0430-circle.png)
+![实心圆]({{ Configr.site['static_url'] }}/images/2013/0430-circle.png)
 
 通过 `position: absolute` 在其内部使用 `:before` 伪元素再画一个内部的圆圈，设置其为白色，让我们的圆圈达到镂空效果。如下图：
 
-![空心圆]({{ site.static_url }}/images/2013/0430-doughnut-circle.png)
+![空心圆]({{ Configr.site['static_url'] }}/images/2013/0430-doughnut-circle.png)
 
 这一步的 html DOM 如下：
 
@@ -78,7 +78,7 @@ css 实现简略如下：
 
 根据 clip，我们再画一个白色的大圆覆盖在最上面，但是 clip 它使其显示一半儿，再通过 css 的 animation，让它旋转起来。效果如下图：
 
-![动画转动的半空心圆]({{ site.static_url }}/images/2013/0430-half-circle-animation.gif)
+![动画转动的半空心圆]({{ Configr.site['static_url'] }}/images/2013/0430-half-circle-animation.gif)
 
 这一步的额外 css 如下：
 
@@ -160,7 +160,7 @@ css 实现简略如下：
 
 这样子 .time-circle-inner 只会在 50% ~ 100% 的时间段内，在左半部分画一个动画的半圆。效果如下：（动画前半段是空白的，需要等待下）
 
-![动画转动的左半圆]({{ site.static_url }}/images/2013/0430-left-half-circle.gif)
+![动画转动的左半圆]({{ Configr.site['static_url'] }}/images/2013/0430-left-half-circle.gif)
 
 ### 第四步
 
@@ -168,7 +168,7 @@ css 实现简略如下：
 
 再看一下我们的最终效果：
 
-![秒表时钟效果]({{ site.static_url }}/images/2013/0430-stopwatcher.gif)
+![秒表时钟效果]({{ Configr.site['static_url'] }}/images/2013/0430-stopwatcher.gif)
 
 github 代码地址： [https://github.com/flanker/h5c3/tree/master/time-circle](https://github.com/flanker/h5c3/tree/master/time-circle)
 

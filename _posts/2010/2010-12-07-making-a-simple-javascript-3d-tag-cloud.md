@@ -45,11 +45,11 @@ status: publish
         text-shadow: #66A3D2 1px -1px 1px;
     }
 
-![Html 加上 CSS 后的样子]({{ site.static_url }}/images/2010/html-with-css.png)
+![Html 加上 CSS 后的样子]({{ Configr.site['static_url'] }}/images/2010/html-with-css.png)
 
 Html 加上 CSS 后的效果就如上图所示，所有的超链接因为 position 设置为了 absolute 并且又没有设置 left/top，所以全都挤到了一起。下面就需要 Javascript 出场了，简单来讲就是通过 Javascript 不断的设置每一个 超链接的 left/top，来让所有的超链接不断的移动位置，看起来就好象成为了标签云在飘动。
 
-![Javascript 3D 标签云]({{ site.static_url }}/images/2010/javascript-simple-3d-tag-cloud.png)
+![Javascript 3D 标签云]({{ Configr.site['static_url'] }}/images/2010/javascript-simple-3d-tag-cloud.png)
 
 首先给出我们预期的 3D 标签云的样子。
 

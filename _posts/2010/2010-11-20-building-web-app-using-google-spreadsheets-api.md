@@ -31,7 +31,7 @@ Google Spreadsheets API 目前已经有很多 [客户端库](http://code.google.
 
 第一步, 在 Google Docs 上建立一个 Spreadsheet
 
-![Google Spreadsheets]({{ site.static_url }}/images/2010/GoogleSpreadsheets.jpg)
+![Google Spreadsheets]({{ Configr.site['static_url'] }}/images/2010/GoogleSpreadsheets.jpg)
 
 一个 Worksheet 工作表就类似于数据库系统的一张表, 行和列分别类似. 这里先手工录入一些数据. 为了下面方便, 我们把这个文档设置为 public 在网络上发布任何人可以读取数据.
 
@@ -136,7 +136,7 @@ HTTP 请求来的 Json 数据被成功解析, 转化为 DTO 对象, 数据集合
 
 这里简单的通过 <dl> 标签来显示数据. 最终展示结果如下: (在线访问地址: [http://chaojiwudi.com/tool](http://chaojiwudi.com/tool))
 
-![web application]({{ site.static_url }}/images/2010/webapp.jpg)
+![web application]({{ Configr.site['static_url'] }}/images/2010/webapp.jpg)
 
 至此, 一个最简单的使用 Google Spreadsheets API 搭建的在线应用就完成了. 当然这个应用还很简单, 没有设计用户身份验证, 以及修改数据等操作 (对于我的需求来说, 在 Docs 里来修改数据也可以接受, 呵呵). 可以在之后进一步对其进行修改.
 

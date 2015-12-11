@@ -21,7 +21,7 @@ status: publish
 
 很多网站的菜单栏都是一个 inline 布局的 ul/li 列表，为了突显，会在当前选择的菜单项目上加一个 background-color 或者 border 之类的，并且在用户 hover 到其他菜单项目上时，也会用一些样式来凸显。为了让这个效果更加好看，会使用一些技术来做成动画效果。如下图（gif）所示：
 
-![菜单滑块动画效果]({{ site.static_url }}/images/2013/0404-animated-menu-bar.gif)
+![菜单滑块动画效果]({{ Configr.site['static_url'] }}/images/2013/0404-animated-menu-bar.gif)
 
 这个效果实现起来，使用 javascript 的话比较简单。我们可以通过处理 li 的 hover 事件，来动态的调整选择符的位置。
 

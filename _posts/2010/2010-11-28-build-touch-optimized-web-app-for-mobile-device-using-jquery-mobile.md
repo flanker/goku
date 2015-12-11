@@ -76,7 +76,7 @@ jQuery Mobile 把最终展示给移动设备屏幕的页面成为一个 [page](h
 
 然后... 然后没有了. 现在这个页面用移动设备浏览器打开, TA-DA, 就是一个很漂亮的移动版本了.
 
-![jQuery Mobile 基本页面]({{ site.static_url }}/images/2010/jQueryMobileBasicPage.png)
+![jQuery Mobile 基本页面]({{ Configr.site['static_url'] }}/images/2010/jQueryMobileBasicPage.png)
 
 什么? 我们的 Javascript 在哪里? 嗯. jQuery Mobile 的一个特性就是, 不需要写 Javascript 来配置页面, 而是通过 HTML Attribute 属性来搞定. (是不是让人想起了 Asp.NET) 但是请注意, jQuery Mobile 使用的 HTML5标准的 [自定义属性](http://ejohn.org/blog/html-5-data-attributes/ "John Resig 的 HTML5 自定义属性文章"). 即上个代码中的 "data-role", HTML5 运行页面开发者使用以 "data-" 开头的自定义属性. 所以在 jQuery Mobile 中大部分都是靠这个来实现的.
 
@@ -86,6 +86,6 @@ jQuery Mobile 把最终展示给移动设备屏幕的页面成为一个 [page](h
 
 下面是从我的 Android 机器访问我的超级无敌网站的实际效果截图: [http://chaojiwudi.com/m](http://chaojiwudi.com/m "超级无敌") (用 Chrome 浏览器打开也可以看到效果). 该页面在 W3C Validate 是 HTML5 标记验证通过的.
 
-![Android手机访问效果截图]({{ site.static_url }}/images/2010/jQueryMobileOnAndroid.png)
+![Android手机访问效果截图]({{ Configr.site['static_url'] }}/images/2010/jQueryMobileOnAndroid.png)
 
 这篇文章是使用 jQuery Mobile 开发针对移动设备的 Web 应用的一个简介. 目前 jQuery Mobile 还处于 Alpha 2, 虽然已经十分精彩, 但也有些不足, 未来还是有很大的发展潜力的. ( 估计首先集中在性能和移动设备的兼容性上 )

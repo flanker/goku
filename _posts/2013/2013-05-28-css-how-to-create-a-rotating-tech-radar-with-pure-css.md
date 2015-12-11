@@ -26,7 +26,7 @@ ThoughtWorks 公司定期会发布 Tech Radar，以一个雷达图表的方式�
 
 ### 产出
 
-![html/css Tech Radar]({{ site.static_url }}/images/2013/0528-tech-radar.png)
+![html/css Tech Radar]({{ Configr.site['static_url'] }}/images/2013/0528-tech-radar.png)
 
 移步 [这里](http://flanker.github.io/h5c3/radar/) 可以看到当前的结果。
 

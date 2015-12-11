@@ -22,7 +22,7 @@ status: publish
 
 截图如下：
 
-![空元素水平对齐问题]({{ site.static_url }}/images/2013/0625-css-vertical-align-baseline-empty-inline-element.png)
+![空元素水平对齐问题]({{ Configr.site['static_url'] }}/images/2013/0625-css-vertical-align-baseline-empty-inline-element.png)
 
 <!-- more -->
 

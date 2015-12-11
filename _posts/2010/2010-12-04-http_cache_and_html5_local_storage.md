@@ -36,7 +36,7 @@ status: publish
         return result;
     }
 
-![普通的 Http 请求]({{ site.static_url }}/images/2010/regular_http_request.png)
+![普通的 Http 请求]({{ Configr.site['static_url'] }}/images/2010/regular_http_request.png)
 
 通过 Chrome 的 Network 监控功能，可以看到 regular_http_request 整个页面响应达到了 5.31 秒（当然了，服务器 Sleep 了 5 秒），在加载页面的过程中，整个浏览器都是空白刷新状态，这样子对用户肯定是一个糟糕的体验。
 
@@ -64,7 +64,7 @@ Ajax 的应用，使得我可以使用异步 Http 请求来避免整个页面的
         $('#result').load('Ajax_Get_Result');
     });
 
-![异步 Http 请求]({{ site.static_url }}/images/2010/ajax_http_request.png)
+![异步 Http 请求]({{ Configr.site['static_url'] }}/images/2010/ajax_http_request.png)
 
 通过 Chrome 浏览器的 Network 监控可以看到，ajax_http_request 页面响应很快，356 毫秒就处理完毕了。但是 ajax_http_request 页面没有包含数据，却包含了一段 Javascript 脚本，该脚本继续发送异步请求 ajax_get_result，这个请求在服务器端处理数据，消耗了 5.31 秒才响应。脚本回调函数根据结果加载到了页面上。
 
@@ -103,11 +103,11 @@ Ajax 的应用，使得我可以使用异步 Http 请求来避免整个页面的
         $('#result').load('Ajax_Get_Result_With_Cache');
     });
 
-![带有 Http Cache 请求]({{ site.static_url }}/images/2010/http_cache.png)
+![带有 Http Cache 请求]({{ Configr.site['static_url'] }}/images/2010/http_cache.png)
 
 上图是请求后再次请求的截图。通过 Chrome 浏览器的 Network 监控可以看到，如果之前已经有了 ajax_get_result_with_cache 缓存，在第二次请求 ajax_get_result_with_cache 时，服务器根据时间戳判断没有过期，则直接返回了 304 Not Modified，大大减少了服务器处理时间和整个响应时间。
 
-![304 Not Modified]({{ site.static_url }}/images/2010/304_not_modified.png)
+![304 Not Modified]({{ Configr.site['static_url'] }}/images/2010/304_not_modified.png)
 
 上图可以看到在一次请求中，客户端发出的请求头含有 If-Modified-Since 日期时间，而服务器端通过这个判断是否需要返回新的数据，在没有新的数据情况下直接返回 304 Not Modified，响应 Content-Length 为 0。
 

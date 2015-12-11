@@ -7,6 +7,7 @@ module Instagram
     def self_media(options)
       p 'Request Instagram - api: users/self/media/recent options: ' + options.to_s
       result = get('users/self/media/recent', options)
+      p "Got #{result.count} images"
       return with_readable_time(result), result.pagination.next_max_id
     end
 
@@ -38,7 +39,9 @@ class InstagramLoader
       client = create_client(accesstokenpath)
       data_set = []
       begin
-        data, next_max_id = client.self_media(:count => page_size, :max_id => next_max_id)
+        options = {count: page_size}
+        options[:max_id] = next_max_id if next_max_id
+        data, next_max_id = client.self_media(options)
         data_set += data
       end while next_max_id
       data_set
@@ -84,6 +87,7 @@ module Jekyll
       collection = InstagramLoader.photos(@accesstoken)
 
       length = collection.length
+      p "Total instagram images: #{length}."
       result = []
 
       # loop through found photos and render results
