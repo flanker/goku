@@ -42,7 +42,7 @@ author :
 #
 production_url : http://blog.chaojiwudi.com
 
-static_url: <%= ENV.fetch('STATIC_BASE', 'http://static.fengzhichao.me') %>
+static_url: <%= ENV.fetch('STATIC_BASE', 'http://static.chaojiwudi.com') %>
 # static_url: http://localhost:4000
 
 # All Jekyll-Bootstrap specific configurations are namespaced into this hash
