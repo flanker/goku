@@ -14,9 +14,10 @@ $(function () {
     2: {degree: '20deg', z: 900},
     3: {degree: '30deg', z: 850},
     4: {degree: '40deg', z: 800},
-    5: {degree: '-30deg', z: 850},
-    6: {degree: '-20deg', z: 900},
-    7: {degree: '-10deg', z: 950}
+    5: {degree: '-40deg', z: 800},
+    6: {degree: '-30deg', z: 850},
+    7: {degree: '-20deg', z: 900},
+    8: {degree: '-10deg', z: 950},
   };
 
   var targetTop = $(".timeline-inner").offset().top + 10;
@@ -61,7 +62,7 @@ $(function () {
     $('.folding-fan .timeline-tag').each(function () {
       var $this = $(this);
       var index = $this.data('index');
-      var newIndex = (index - selected + 8) % 8;
+      var newIndex = (index - selected + 9) % 9;
       var degree = indexDegreeMap[newIndex].degree;
 
       $this.data('index', newIndex);
